@@ -2397,7 +2397,10 @@
             background: linear-gradient(105deg, #0b1220 0%, #111c31 55%, #0d1728 100%);
             color: #f8fafc;
             box-shadow: 0 12px 34px rgba(0, 0, 0, .58), 0 0 22px rgba(56, 189, 248, .12);
-            animation: sticky-enter .35s cubic-bezier(.2, .8, .2, 1) both;
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+            transition: opacity .35s ease, transform .35s cubic-bezier(.2, .8, .2, 1), visibility 0s linear 0s;
             border-radius: 18px;
         }
 
@@ -2410,7 +2413,12 @@
         }
 
         .sticky-cta[hidden] {
-            display: none;
+            display: grid;
+            opacity: 0;
+            transform: translateY(16px);
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity .35s ease, transform .35s cubic-bezier(.2, .8, .2, 1), visibility 0s linear .35s;
         }
 
         .visually-hidden-frame {
@@ -2589,7 +2597,7 @@
             <img src="./Image/banner.avif" alt="WhiteSpot Care Hero Image" loading="eager" fetchpriority="high">
         </section>
 
-        <section class="pain" aria-labelledby="pain-title">
+        <section class="pain" id="pain" aria-labelledby="pain-title">
             <h2 id="pain-title">समस्या को समझें</h2>
             <p class="section-lead">सफेद दागों के साथ दिखाई देने वाले बदलाव</p>
             <div class="pain-list">
@@ -3166,15 +3174,24 @@
 
         const stickyCta = document.querySelector("#sticky-cta");
         const stickyBlockers = new Set();
+        let painSectionVisible = false;
         const stickyObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
-                if (entry.isIntersecting) stickyBlockers.add(entry.target);
-                else stickyBlockers.delete(entry.target);
+                if (entry.target.id === "pain") {
+                    if (entry.isIntersecting) painSectionVisible = true;
+                    return;
+                }
+
+                if (entry.isIntersecting) {
+                    stickyBlockers.add(entry.target);
+                } else {
+                    stickyBlockers.delete(entry.target);
+                }
             });
-            stickyCta.hidden = stickyBlockers.size > 0;
+            stickyCta.hidden = !painSectionVisible || stickyBlockers.size > 0;
         }, { threshold: 0.01 });
 
-        document.querySelectorAll("#top, #order, .disclaimer").forEach((section) => {
+        document.querySelectorAll("#pain, #top, #order, .disclaimer").forEach((section) => {
             stickyObserver.observe(section);
         });
     </script>
