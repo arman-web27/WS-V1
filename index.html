@@ -1,1130 +1,3183 @@
 <!doctype html>
 <html lang="hi">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#090d16" />
-    <meta
-      name="description"
-      content="त्वचा पर सफेद धब्बों के बारे में सही जानकारी पाएँ। कारण समझने और उचित देखभाल के लिए त्वचा विशेषज्ञ से सलाह लें।"
-    />
-    <title>White Spot Care | त्वचा की सही देखभाल</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,400&family=Hind:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#080B10">
+    <meta name="description"
+        content="WhiteSpot Care Skin Care Kit: त्वचा की नियमित देखभाल के लिए 3-step routine. सही जानकारी और dermatologist की सलाह को प्राथमिकता दें।">
+    <title>WhiteSpot Care | त्वचा की नियमित देखभाल</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-      :root {
-        --primary: #3b82f6;
-        --primary-glow: rgba(59, 130, 246, 0.35);
-        --primary-dark: #1d4ed8;
-        --bg-body: #07090e;
-        --bg-surface: #0e131f;
-        --bg-surface-tint: #141b2a;
-        --bg-card: #182032;
-        --ink-pure: #ffffff;
-        --ink: #f1f5f9;
-        --muted: #94a3b8;
-        --line: rgba(255, 255, 255, 0.08);
-        --line-strong: rgba(59, 130, 246, 0.25);
-        --radius: 18px;
-        --page-width: 580px;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 80px;
-        background-color: var(--bg-body);
-      }
-
-      body {
-        margin: 0;
-        background: radial-gradient(circle at 50% 0%, #111a2f 0%, #07090e 70%);
-        color: var(--ink);
-        font-family: "DM Sans", Hind, sans-serif;
-        font-size: 15.5px;
-        line-height: 1.7;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      body > header,
-      body > main,
-      body > footer {
-        width: min(var(--page-width), 100%);
-        margin-inline: auto;
-        background: var(--bg-surface);
-      }
-
-      body > header {
-        border-inline: 1px solid var(--line);
-      }
-
-      body > footer {
-        border-inline: 1px solid var(--line);
-        padding: 0 20px;
-      }
-
-      button, input, select {
-        font: inherit;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .wrap {
-        width: calc(100% - 36px);
-        margin: auto;
-      }
-
-      /* Topbar */
-      .topbar {
-        height: 70px;
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid var(--line);
-        background: rgba(14, 19, 31, 0.85);
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        backdrop-filter: blur(16px);
-      }
-
-      .topbar-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-      }
-
-      .brand {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-weight: 700;
-        font-size: 19px;
-        letter-spacing: -0.02em;
-        color: var(--ink-pure);
-      }
-
-      .brand-mark {
-        width: 36px;
-        height: 36px;
-        border-radius: 11px;
-        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-        box-shadow: 0 0 16px var(--primary-glow);
-        display: grid;
-        place-items: center;
-        color: white;
-      }
-
-      .brand-mark svg {
-        width: 20px;
-      }
-
-      .nav {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        color: var(--muted);
-        font-size: 13px;
-        font-weight: 600;
-      }
-
-      .nav a:not(.btn):hover {
-        color: var(--primary);
-      }
-
-      .btn {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        padding: 11px 18px;
-        border-radius: 12px;
-        background: linear-gradient(135deg, #3b82f6, #2563eb);
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        color: #fff;
-        font-weight: 600;
-        font-size: 14px;
-        box-shadow: 0 4px 18px var(--primary-glow);
-        transition: all 0.2s ease;
-        cursor: pointer;
-      }
-
-      .btn:hover {
-        background: linear-gradient(135deg, #2563eb, #1d4ed8);
-        transform: translateY(-1px);
-        box-shadow: 0 6px 22px rgba(59, 130, 246, 0.45);
-      }
-
-      .btn.outline {
-        background: rgba(59, 130, 246, 0.08);
-        border: 1px solid var(--line-strong);
-        color: #93c5fd;
-        box-shadow: none;
-      }
-
-      .btn.outline:hover {
-        background: rgba(59, 130, 246, 0.16);
-        color: #fff;
-      }
-
-      /* Hero Section */
-      .hero {
-        padding: 44px 0 48px;
-        border-bottom: 1px solid var(--line);
-        position: relative;
-      }
-
-      .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        color: #60a5fa;
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        background: rgba(59, 130, 246, 0.1);
-        padding: 4px 10px;
-        border-radius: 20px;
-        border: 1px solid rgba(59, 130, 246, 0.2);
-        margin-bottom: 14px;
-      }
-
-      .hero h1 {
-        font-family: Hind, sans-serif;
-        font-size: clamp(32px, 5.5vw, 42px);
-        line-height: 1.25;
-        font-weight: 700;
-        letter-spacing: -0.02em;
-        margin: 0 0 14px;
-        color: var(--ink-pure);
-      }
-
-      .hero h1 em {
-        color: #60a5fa;
-        font-style: normal;
-        background: linear-gradient(90deg, #93c5fd, #3b82f6);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      .hero-copy {
-        font-size: 16px;
-        color: var(--muted);
-        line-height: 1.75;
-        margin: 0;
-      }
-
-      .hero-actions {
-        display: flex;
-        gap: 12px;
-        flex-wrap: wrap;
-        margin-top: 24px;
-      }
-
-      .hero-note {
-        font-size: 12.5px;
-        color: #64748b;
-        margin-top: 18px;
-        display: flex;
-        align-items: center;
-        gap: 6px;
-      }
-
-      .hero-note:before {
-        content: "ℹ";
-        color: #60a5fa;
-      }
-
-      /* Visual Skin Art */
-      .visual {
-        min-height: 290px;
-        margin-top: 28px;
-        position: relative;
-        display: grid;
-        place-items: center;
-      }
-
-      .visual-halo {
-        position: absolute;
-        width: 280px;
-        height: 280px;
-        border-radius: 50%;
-        background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(14, 19, 31, 0) 70%);
-      }
-
-      .skin-art {
-        position: relative;
-        width: min(300px, 100%);
-        height: 260px;
-        border-radius: 46% 54% 48% 52% / 50% 45% 55% 50%;
-        background: linear-gradient(145deg, #d49f7e, #b57c5a 75%, #9b6343);
-        box-shadow: inset -15px -15px 40px rgba(0,0,0,0.5), 0 20px 40px rgba(0,0,0,0.6);
-        overflow: hidden;
-      }
-
-      .skin-art:before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: radial-gradient(ellipse at 25% 25%, rgba(255,255,255,0.25) 0%, transparent 40%);
-      }
-
-      .spot {
-        position: absolute;
-        background: #fdf5ef;
-        border-radius: 50% 48% 52% 46%;
-        box-shadow: inset 0 2px 4px rgba(139, 90, 60, 0.25), 0 1px 4px rgba(0,0,0,0.2);
-        opacity: 0.95;
-      }
-
-      .spot.s1 { width: 55px; height: 42px; left: 55px; top: 58px; transform: rotate(20deg); }
-      .spot.s2 { width: 40px; height: 32px; left: 145px; top: 110px; transform: rotate(-15deg); }
-      .spot.s3 { width: 68px; height: 50px; left: 195px; top: 48px; transform: rotate(10deg); }
-      .spot.s4 { width: 48px; height: 38px; left: 75px; top: 165px; transform: rotate(-8deg); }
-      .spot.s5 { width: 28px; height: 24px; left: 190px; top: 180px; transform: rotate(25deg); }
-
-      .art-label {
-        position: absolute;
-        z-index: 2;
-        display: flex;
-        gap: 8px;
-        align-items: center;
-        padding: 9px 14px;
-        background: rgba(24, 32, 50, 0.9);
-        border: 1px solid var(--line-strong);
-        border-radius: 30px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-        font-size: 12px;
-        font-weight: 600;
-        color: var(--ink);
-        backdrop-filter: blur(8px);
-      }
-
-      .art-label span:first-child {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background: #60a5fa;
-        box-shadow: 0 0 8px #60a5fa;
-      }
-
-      .art-label.one { top: 12px; left: 10px; }
-      .art-label.two { bottom: 12px; right: 10px; }
-
-      /* Section Common */
-      .section {
-        padding: 54px 0;
-        border-bottom: 1px solid var(--line);
-      }
-
-      .section.tint {
-        background: var(--bg-surface-tint);
-      }
-
-      .section-head {
-        text-align: center;
-        margin-bottom: 30px;
-      }
-
-      .section-head h2 {
-        font-family: Hind, sans-serif;
-        font-size: clamp(26px, 4.5vw, 32px);
-        line-height: 1.3;
-        margin: 10px 0 8px;
-        color: var(--ink-pure);
-      }
-
-      .section-head p {
-        color: var(--muted);
-        font-size: 15px;
-        margin: 0;
-      }
-
-      /* Roadmap (Fixed Text Contrast) */
-      .roadmap {
-        border-left: 2px solid rgba(59, 130, 246, 0.3);
-        margin: 10px 0 20px 14px;
-        padding: 2px 0 2px 22px;
-      }
-
-      .roadmap article {
-        position: relative;
-        display: flex;
-        gap: 12px;
-        align-items: flex-start;
-        padding: 10px 0;
-      }
-
-      .roadmap article:before {
-        content: "";
-        position: absolute;
-        left: -28px;
-        top: 17px;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: #3b82f6;
-        box-shadow: 0 0 10px var(--primary);
-      }
-
-      .roadmap article span {
-        font-size: 12px;
-        letter-spacing: 0.05em;
-        font-weight: 700;
-        color: #60a5fa;
-        background: rgba(59, 130, 246, 0.15);
-        padding: 2px 6px;
-        border-radius: 6px;
-        margin-top: 2px;
-      }
-
-      .roadmap article p {
-        margin: 0;
-        color: #d1d5db; /* High-contrast white/gray */
-        font-size: 15px;
-      }
-
-      .notice {
-        margin-top: 22px;
-        padding: 15px 18px;
-        background: rgba(59, 130, 246, 0.08);
-        border-left: 3px solid var(--primary);
-        border-radius: 0 12px 12px 0;
-        color: #cbd5e1;
-        font-size: 13.5px;
-        line-height: 1.6;
-      }
-
-      /* Care Steps (Fixed White BG Bug) */
-      .care-steps {
-        display: grid;
-        gap: 12px;
-      }
-
-      .care-steps article {
-        display: flex;
-        gap: 14px;
-        padding: 18px;
-        border: 1px solid var(--line);
-        border-radius: 14px;
-        background: var(--bg-card);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-      }
-
-      .care-steps article > span {
-        flex: 0 0 34px;
-        width: 34px;
-        height: 34px;
-        border-radius: 10px;
-        background: rgba(59, 130, 246, 0.15);
-        color: #60a5fa;
-        display: grid;
-        place-items: center;
-        font-size: 13px;
-        font-weight: 700;
-      }
-
-      .care-steps h3 {
-        font-size: 16px;
-        margin: 0 0 4px;
-        color: var(--ink-pure);
-      }
-
-      .care-steps p {
-        font-size: 14px;
-        color: var(--muted);
-        margin: 0;
-        line-height: 1.5;
-      }
-
-      /* Ingredients Cards (Realistic Ayurvedic Herbal Content) */
-      .ingredients {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
-        margin-top: 20px;
-      }
-
-      .ingredient {
-        padding: 18px 14px;
-        text-align: center;
-        background: var(--bg-card);
-        border: 1px solid var(--line);
-        border-radius: 14px;
-        color: #94a3b8;
-        font-size: 13px;
-        transition: border-color 0.2s;
-      }
-
-      .ingredient:hover {
-        border-color: var(--primary);
-      }
-
-      .ingredient strong {
-        display: block;
-        color: #93c5fd;
-        font-size: 15px;
-        margin-bottom: 4px;
-      }
-
-      .check-list {
-        list-style: none;
-        padding: 0;
-        margin: 20px 0;
-      }
-
-      .check-list li {
-        display: flex;
-        gap: 10px;
-        margin: 10px 0;
-        color: #cbd5e1;
-        font-size: 14.5px;
-      }
-
-      .check {
-        flex: 0 0 20px;
-        height: 20px;
-        border-radius: 50%;
-        background: rgba(59, 130, 246, 0.15);
-        color: #60a5fa;
-        display: grid;
-        place-items: center;
-        font-size: 12px;
-        font-weight: bold;
-        margin-top: 3px;
-      }
-
-      /* Product Visual Bottle */
-      .product-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 28px;
-        align-items: center;
-      }
-
-      .product-visual {
-        min-height: 280px;
-        border-radius: 20px;
-        background: radial-gradient(circle at center, #1e293b 0%, #0f172a 80%);
-        border: 1px solid var(--line);
-        display: grid;
-        place-items: center;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .bottle {
-        z-index: 1;
-        width: 110px;
-        height: 190px;
-        background: linear-gradient(90deg, #1e293b, #0f172a 35%, #1e293b 80%, #334155);
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        border-radius: 16px 16px 20px 20px;
-        box-shadow: 0 20px 35px rgba(0,0,0,0.7);
-        position: relative;
-      }
-
-      .bottle:before {
-        content: "";
-        position: absolute;
-        width: 54px;
-        height: 22px;
-        left: 28px;
-        top: -20px;
-        border-radius: 5px 5px 0 0;
-        background: repeating-linear-gradient(90deg, #2563eb 0 4px, #1d4ed8 4px 8px);
-      }
-
-      .bottle:after {
-        content: "AYURVEDIC\AHERBAL\ASUPPORT";
-        white-space: pre;
-        display: grid;
-        place-items: center;
-        text-align: center;
-        line-height: 1.4;
-        letter-spacing: 0.05em;
-        font-size: 10px;
-        font-weight: 700;
-        color: #60a5fa;
-        position: absolute;
-        left: 8px;
-        right: 8px;
-        top: 60px;
-        height: 65px;
-        border-block: 1px solid rgba(96, 165, 250, 0.25);
-        background: rgba(15, 23, 42, 0.85);
-      }
-
-      /* Quality items */
-      .quality-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-      }
-
-      .quality-item {
-        display: flex;
-        gap: 12px;
-        padding: 15px;
-        background: var(--bg-card);
-        border: 1px solid var(--line);
-        border-radius: 14px;
-      }
-
-      .quality-item strong {
-        display: block;
-        color: var(--ink-pure);
-        font-size: 14.5px;
-      }
-
-      .quality-item p {
-        margin: 2px 0 0;
-        color: var(--muted);
-        font-size: 13.5px;
-      }
-
-      /* CTA Panel */
-      .cta-panel {
-        background: linear-gradient(135deg, #1e293b, #111827);
-        border: 1px solid rgba(59, 130, 246, 0.3);
-        border-radius: 20px;
-        padding: 28px 22px;
-        text-align: center;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-      }
-
-      .cta-panel h2 {
-        font-family: Hind, sans-serif;
-        font-size: 25px;
-        margin: 0 0 10px;
-        color: var(--ink-pure);
-      }
-
-      .cta-panel p {
-        color: #cbd5e1;
-        font-size: 14.5px;
-        margin: 0 0 20px;
-      }
-
-      /* Form Section */
-      .form-card {
-        border: 1px solid var(--line);
-        border-radius: 18px;
-        padding: 22px;
-        background: var(--bg-card);
-        box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-      }
-
-      .field {
-        margin-bottom: 15px;
-      }
-
-      .field label {
-        display: block;
-        font-weight: 600;
-        font-size: 13.5px;
-        color: #cbd5e1;
-        margin-bottom: 6px;
-      }
-
-      .field input,
-      .field select {
-        width: 100%;
-        padding: 11px 13px;
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        border-radius: 10px;
-        background: #090d16;
-        color: #ffffff;
-        font-size: 14px;
-        transition: border 0.2s;
-      }
-
-      .field input:focus,
-      .field select:focus {
-        border-color: #3b82f6;
-        outline: none;
-        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
-      }
-
-      .field input::placeholder {
-        color: #64748b;
-      }
-
-      .form-card .btn {
-        width: 100%;
-        padding: 13px;
-        font-size: 15px;
-        margin-top: 4px;
-      }
-
-      .form-note {
-        font-size: 12px;
-        color: #64748b;
-        text-align: center;
-        margin: 12px 0 0;
-      }
-
-      /* FAQ List */
-      .faq-list details {
-        padding: 16px 0;
-        border-bottom: 1px solid var(--line);
-      }
-
-      .faq-list summary {
-        cursor: pointer;
-        list-style: none;
-        font-weight: 600;
-        font-size: 15px;
-        color: var(--ink-pure);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .faq-list summary::-webkit-details-marker {
-        display: none;
-      }
-
-      .faq-list summary:after {
-        content: "+";
-        color: #60a5fa;
-        font-size: 20px;
-        font-weight: bold;
-      }
-
-      .faq-list details[open] summary:after {
-        content: "−";
-      }
-
-      .faq-list details p {
-        color: var(--muted);
-        margin: 10px 0 0;
-        font-size: 14px;
-      }
-
-      /* Reviews Box */
-      .reviews-box {
-        padding: 20px;
-        border-radius: 14px;
-        border: 1px dashed rgba(255, 255, 255, 0.15);
-        background: rgba(14, 19, 31, 0.5);
-        color: #94a3b8;
-        font-size: 13.5px;
-        text-align: center;
-      }
-
-      /* Disclaimer & Footer */
-      .disclaimer {
-        padding: 26px 0 18px;
-        border-top: 1px solid var(--line);
-        color: #64748b;
-        font-size: 12.5px;
-        line-height: 1.7;
-      }
-
-      .disclaimer strong {
-        color: #94a3b8;
-        letter-spacing: 0.05em;
-        font-size: 12px;
-      }
-
-      .footer {
-        padding: 18px 0 90px;
-        border-top: 1px solid var(--line);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #64748b;
-        font-size: 12.5px;
-      }
-
-      .footer a:hover {
-        color: #60a5fa;
-      }
-
-      /* Mobile CTA Bar */
-      .sticky-order {
-        position: fixed;
-        z-index: 99;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: min(var(--page-width), 100%);
-        padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
-        background: rgba(14, 19, 31, 0.92);
-        border-top: 1px solid var(--line);
-        backdrop-filter: blur(14px);
-      }
-
-      .sticky-order .btn {
-        width: 100%;
-        padding: 12px;
-      }
-
-      @media (max-width: 580px) {
-        .nav a:not(.btn) {
-          display: none;
+        :root {
+            color-scheme: dark;
+            --blue: #2563EB;
+            --blue-light: #38BDF8;
+            --blue-hover: #1D4ED8;
+            --blue-dim: rgba(37, 99, 235, 0.18);
+            --black: #080B10;
+            --card-dark: #0F172A;
+            --card-elevated: #162033;
+            --ink: #FFFFFF;
+            --text-muted: #94A3B8;
+            --white: #FFFFFF;
+            --font: "Halant", "Noto Serif Devanagari", serif;
         }
-        .hero-actions .btn {
-          width: 100%;
+
+        * {
+            box-sizing: border-box;
         }
-      }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 16px;
+        }
+
+        body {
+            margin: 0;
+            background: #000000;
+            color: var(--ink);
+            font-family: var(--font);
+            font-size: 19.8px;
+            line-height: 1.55;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .icon {
+            width: 1em;
+            height: 1em;
+            flex: 0 0 auto;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            vertical-align: -.15em;
+        }
+
+        .icon-fill {
+            fill: currentColor;
+            stroke: none;
+        }
+
+        /* Keep every section introduction aligned consistently. */
+        .page-shell > section[aria-labelledby] > h2,
+        .page-shell > section[aria-labelledby] .quality-copy > h2,
+        .page-shell > section[aria-labelledby] .offer-copy > h2 {
+            font-size: 30px;
+            line-height: 1.35;
+            text-align: center;
+            text-wrap: balance;
+        }
+
+        .page-shell > section[aria-labelledby] > .section-lead,
+        .page-shell > section[aria-labelledby] > .kit-subtitle,
+        .page-shell > section[aria-labelledby] > .order-lead,
+        .page-shell > section[aria-labelledby] .quality-kicker,
+        .page-shell > section[aria-labelledby] .offer-label,
+        .page-shell > section[aria-labelledby] .offer-subtitle {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .page-shell > section[aria-labelledby] > .section-lead,
+        .page-shell > section[aria-labelledby] > .kit-subtitle,
+        .page-shell > section[aria-labelledby] > .order-lead,
+        .page-shell > section[aria-labelledby] .offer-subtitle {
+            font-size: 22px;
+            line-height: 1.4;
+        }
+
+        .quality-copy > p:not(.quality-kicker),
+        .offer-copy > .offer-subtitle {
+            text-align: center;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        button,
+        input {
+            font: inherit;
+        }
+
+        .page-shell {
+            width: min(100%, 450px);
+            margin-inline: auto;
+            overflow: hidden;
+            background: var(--black);
+            box-shadow: 0 0 0 1px rgba(56, 189, 248, .2), 0 28px 80px rgba(0, 0, 0, .85);
+        }
+
+        .section-pad {
+            padding: 16px 12px;
+            position: relative;
+        }
+
+        .topline {
+            height: 60px;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--black);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .wordmark {
+            color: var(--ink);
+            font-size: 18.7px;
+            font-weight: 700;
+            letter-spacing: .04em;
+            text-decoration: none;
+        }
+
+        .wordmark span {
+            color: var(--blue-light);
+        }
+
+        .top-cta {
+            color: var(--blue-light);
+            font-size: 17.6px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .top-cta span {
+            display: inline-block;
+            transition: transform .2s ease;
+        }
+
+        .top-cta:hover span {
+            transform: translate(3px, -3px);
+        }
+
+        .hero {
+            background: var(--black);
+        }
+
+        .image-cut {
+            overflow: hidden;
+            isolation: isolate;
+        }
+
+        .image-cut img {
+            transition: transform .6s cubic-bezier(.2, .75, .25, 1), filter .3s ease;
+        }
+
+        .image-cut:hover img {
+            transform: scale(1.045);
+            filter: saturate(1.1);
+        }
+
+        .image-cut-hero {
+            position: relative;
+            height: 245px;
+            clip-path: polygon(0 0, 100% 0, 100% 86%, 85% 100%, 0 93%);
+        }
+
+        .image-cut-hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(8, 11, 16, .7), transparent 64%);
+            pointer-events: none;
+        }
+
+        .photo-caption {
+            position: absolute;
+            z-index: 1;
+            bottom: 25px;
+            left: 18px;
+            color: var(--white);
+            font-size: 16.5px;
+        }
+
+        .hero-copy {
+            padding-top: 18px;
+        }
+
+        .eyebrow,
+        .product-no,
+        .offer-label {
+            margin: 0;
+            color: var(--blue-light);
+            font-size: 14.3px;
+            font-weight: 700;
+            letter-spacing: .04em;
+        }
+
+        .eyebrow {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            color: var(--blue-light);
+        }
+
+        .eyebrow-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--blue-light);
+            box-shadow: 0 0 0 4px rgba(56, 189, 248, .2);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        p {
+            margin-top: 0;
+        }
+
+        h1 {
+            margin: 12px 0 10px;
+            font-size: clamp(31.9px, 8.8vw, 39.6px);
+            line-height: 1.33;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .hero-subtitle {
+            margin-bottom: 18px;
+            color: var(--blue-light);
+            font-size: 23.1px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .button {
+            min-height: 52px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            border: 0;
+            border-radius: 4px;
+            padding: 12px 18px;
+            font-size: 18.7px;
+            font-weight: 700;
+            line-height: 1.35;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 9px 20px rgba(37, 99, 235, .3);
+        }
+
+        .button:active {
+            transform: translateY(1px) scale(.99);
+            box-shadow: none;
+        }
+
+        .button-primary {
+            background: var(--blue);
+            color: var(--white);
+        }
+
+        .button-primary:hover {
+            background: var(--blue-light);
+            color: #000;
+        }
+
+        .hero-note,
+        .fine-print {
+            margin: 13px 0 0;
+            color: var(--text-muted);
+            font-size: 14.3px;
+            line-height: 1.5;
+        }
+
+        .hero-stamp {
+            position: absolute;
+            right: 23px;
+            top: 235px;
+            width: 64px;
+            height: 64px;
+            border: 1px solid var(--blue-light);
+            border-radius: 50%;
+            display: grid;
+            align-content: center;
+            justify-items: center;
+            background: var(--card-dark);
+            color: var(--blue-light);
+            transform: rotate(10deg);
+            box-shadow: 0 4px 14px rgba(37, 99, 235, .25);
+        }
+
+        .hero-stamp span {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: .1em;
+        }
+
+        .hero-stamp b {
+            font-size: 25.3px;
+            line-height: 1;
+        }
+
+        .pain {
+            background: #0B111E;
+            padding: 38px 24px 0px 24px;
+        }
+
+        .pain h2,
+        .ingredients h2,
+        .quality h2,
+        .compare h2,
+        .experience h2,
+        .reviews h2,
+        .offer h2,
+        .final-cta h2,
+        .order h2,
+        .faq h2 {
+            margin-bottom: 12px;
+            font-size: 29.7px;
+            line-height: 1.38;
+            color: var(--white);
+        }
+
+        .section-lead {
+            margin-bottom: 20px;
+            color: var(--blue-light);
+            font-size: 20.9px;
+            font-weight: 600;
+        }
+
+        .pain-list {
+            margin-inline: -24px;
+            border-top: 1px solid rgba(56, 189, 248, .2);
+        }
+
+        .pain-list img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .pain-card-grid {
+            position: relative;
+            display: grid;
+            gap: 26px 0;
+            padding: 22px 0 28px;
+            background: #0B111E;
+        }
+
+        .pain-card-grid::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 1px;
+            transform: translateX(-50%);
+            background: rgba(56, 189, 248, .55);
+        }
+
+        .pain-card {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            align-items: center;
+            gap: 38px;
+            min-height: 142px;
+            padding: 0 12px;
+            background: transparent;
+        }
+
+        .pain-card::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 12px;
+            height: 12px;
+            transform: translate(-50%, -50%);
+            border: 1px solid var(--blue-light);
+            border-radius: 50%;
+            background: #0B111E;
+            box-shadow: 0 0 0 4px rgba(56, 189, 248, .12);
+        }
+
+        .pain-card:nth-child(even) h3 {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .pain-card:nth-child(even) img {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .pain-card img {
+            width: 100%;
+            height: 142px;
+            object-fit: cover;
+            border: 1px solid rgba(255, 255, 255, .8);
+            border-radius: 12px;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, .32);
+            transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+        }
+
+        .pain-card h3 {
+            margin: 0;
+            padding: 8px 0;
+            color: var(--white);
+            font-size: 19px;
+            line-height: 1.35;
+            text-align: left;
+            text-wrap: balance;
+            transition: color .3s ease, transform .3s ease;
+        }
+
+        .pain-card:hover img {
+            transform: scale(1.035);
+            border-color: var(--blue-light);
+            box-shadow: 0 0 0 2px rgba(56, 189, 248, .18), 0 10px 24px rgba(0, 0, 0, .45);
+        }
+
+        .pain-card:hover h3 {
+            color: var(--blue-light);
+            transform: translateY(-2px);
+        }
+
+        .pain-card:hover::after {
+            background: var(--blue-light);
+            box-shadow: 0 0 0 5px rgba(56, 189, 248, .18), 0 0 14px rgba(56, 189, 248, .8);
+        }
+
+        .pain-card:nth-child(odd) h3 {
+            text-align: left;
+        }
+
+        .pain-card:nth-child(even) h3 {
+            text-align: right;
+        }
+
+        @media (max-width: 380px) {
+            .pain-card {
+                gap: 28px;
+                padding-inline: 8px;
+            }
+
+            .pain-card img {
+                height: 120px;
+            }
+
+            .pain-card h3 {
+                font-size: 16px;
+            }
+        }
+
+        .pain-row {
+            min-height: 77px;
+            display: grid;
+            grid-template-columns: 25px 54px 1fr 18px;
+            gap: 10px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+            transition: background .2s ease, padding .2s ease;
+        }
+
+        .pain-row:hover {
+            padding-inline: 5px;
+            background: rgba(37, 99, 235, .12);
+        }
+
+        .pain-index {
+            color: var(--blue-light);
+            font-size: 13.2px;
+            font-weight: 700;
+        }
+
+        .pain-photo {
+            width: 48px;
+            height: 48px;
+            clip-path: polygon(0 0, 87% 0, 100% 78%, 17% 100%);
+        }
+
+        .pain-row h3 {
+            margin: 0;
+            font-size: 18.7px;
+            line-height: 1.3;
+            color: var(--white);
+        }
+
+        .row-arrow {
+            color: var(--blue-light);
+            transition: transform .2s ease;
+        }
+
+        .pain-row:hover .row-arrow {
+            transform: translate(2px, -2px);
+        }
+
+        .kit {
+            background: #0A1424;
+            color: var(--white);
+            border-top: 1px solid rgba(56, 189, 248, .15);
+            border-bottom: 1px solid rgba(56, 189, 248, .15);
+        }
+
+        .kit .product-no {
+            color: var(--blue-light);
+        }
+
+        .kit h2 {
+            margin: 12px auto 5px;
+            color: var(--white);
+            font-size: 36.3px;
+            line-height: 1.12;
+            text-align: center;
+            text-wrap: balance;
+        }
+
+        .product-intro-visual {
+            position: relative;
+            display: grid;
+            place-items: center;
+            min-height: 320px;
+            margin: 22px 0 20px;
+            overflow: hidden;
+            border: 1px solid rgba(56, 189, 248, .22);
+            border-radius: 22px;
+            background: radial-gradient(circle, rgba(37, 99, 235, .22), transparent 58%), #080C14;
+        }
+
+        .product-intro-visual::before,
+        .product-intro-visual::after {
+            content: "";
+            position: absolute;
+            border: 1px dashed rgba(56, 189, 248, .55);
+            border-radius: 50%;
+        }
+
+        .product-intro-visual::before {
+            width: 282px;
+            height: 282px;
+        }
+
+        .product-intro-visual::after {
+            width: 226px;
+            height: 226px;
+            border-color: rgba(255, 255, 255, .2);
+        }
+
+        .product-intro-image {
+            position: relative;
+            z-index: 1;
+            width: 198px;
+            height: 198px;
+            overflow: hidden;
+            border: 6px solid #DBEAFE;
+            border-radius: 50%;
+            background: var(--card-dark);
+            box-shadow: 0 0 0 8px rgba(56, 189, 248, .16), 0 16px 34px rgba(0, 0, 0, .5);
+            transition: transform .35s ease, box-shadow .35s ease;
+        }
+
+        .product-intro-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .5s ease, filter .35s ease;
+        }
+
+        .product-intro-visual:hover .product-intro-image {
+            transform: scale(1.045);
+            box-shadow: 0 0 0 10px rgba(56, 189, 248, .22), 0 0 28px rgba(56, 189, 248, .45), 0 18px 38px rgba(0, 0, 0, .55);
+        }
+
+        .product-intro-visual:hover .product-intro-image img {
+            transform: scale(1.08);
+            filter: saturate(1.12) brightness(1.05);
+        }
+
+        .product-intro-badge {
+            position: absolute;
+            z-index: 2;
+            display: grid;
+            place-items: center;
+            width: 72px;
+            height: 72px;
+            padding: 7px;
+            border: 1px solid var(--blue-light);
+            border-radius: 50%;
+            background: var(--blue);
+            color: var(--white);
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1.1;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .35);
+        }
+
+        .product-intro-badge:first-of-type { top: 22px; left: 18px; }
+        .product-intro-badge:last-of-type { right: 18px; bottom: 22px; }
+
+        .product-intro-points {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            margin-bottom: 18px;
+        }
+
+        .product-intro-point {
+            padding: 9px 7px;
+            border: 1px solid rgba(56, 189, 248, .2);
+            border-radius: 10px;
+            background: rgba(15, 23, 42, .8);
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .how-it-works {
+            padding: 34px 12px 28px;
+            background: #080C14;
+        }
+
+        .how-it-works > h2,
+        .how-it-works > .section-lead {
+            text-align: center;
+        }
+
+        .how-it-works > h2 {
+            margin-bottom: 7px;
+            color: var(--white);
+            font-size: 30px;
+            line-height: 1.3;
+        }
+
+        .how-it-works > .section-lead {
+            margin: 0 auto 22px;
+            color: var(--blue-light);
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .how-card {
+            display: grid;
+            grid-template-columns: 42% 58%;
+            align-items: stretch;
+            overflow: hidden;
+            min-height: 154px;
+            border: 1px solid rgba(56, 189, 248, .22);
+            background: #0F172A;
+        }
+
+        .how-card + .how-card {
+            border-top: 0;
+        }
+
+        .how-card:nth-of-type(even) {
+            grid-template-columns: 58% 42%;
+        }
+
+        .how-card:nth-of-type(even) .how-card-image {
+            order: 2;
+        }
+
+        .how-card-image {
+            min-height: 154px;
+            overflow: hidden;
+        }
+
+        .how-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .4s ease, filter .4s ease;
+        }
+
+        .how-card:hover .how-card-image img {
+            transform: scale(1.07);
+            filter: saturate(1.15) brightness(1.08);
+        }
+
+        .how-card-copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 18px 15px;
+        }
+
+        .how-card-number {
+            margin-bottom: 5px;
+            color: var(--blue-light);
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: .08em;
+        }
+
+        .how-card h3 {
+            margin: 0 0 7px;
+            color: var(--white);
+            font-size: 20px;
+            line-height: 1.25;
+        }
+
+        .how-card p {
+            margin: 0;
+            color: var(--text-muted);
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 380px) {
+            .how-card,
+            .how-card:nth-of-type(even) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .how-card-copy {
+                padding: 13px 10px;
+            }
+
+            .how-card h3 {
+                font-size: 17px;
+            }
+
+            .how-card p {
+                font-size: 14px;
+            }
+        }
+
+        .kit-subtitle {
+            margin-bottom: 17px;
+            color: var(--blue-light);
+            font-size: 22px;
+        }
+
+        .kit-intro {
+            margin-bottom: 12px;
+            font-size: 18.7px;
+            color: #CBD5E1;
+        }
+
+        .kit-orbit {
+            position: absolute;
+            right: 19px;
+            top: 35px;
+            width: 73px;
+            height: 73px;
+            display: grid;
+            place-content: center;
+            border: 1px solid var(--blue-light);
+            border-radius: 50%;
+            color: var(--blue-light);
+            font-size: 33px;
+            font-weight: 700;
+            line-height: .9;
+            text-align: center;
+            background: rgba(37, 99, 235, 0.15);
+            transform: rotate(9deg);
+        }
+
+        .kit-orbit span {
+            font-size: 9.9px;
+            letter-spacing: .12em;
+        }
+
+        .product-stack {
+            display: grid;
+            gap: 12px;
+            margin-top: 21px;
+        }
+
+        .product-row {
+            display: grid;
+            grid-template-columns: 112px 1fr;
+            min-height: 119px;
+            background: var(--card-dark);
+            color: var(--white);
+            border: 1px solid rgba(56, 189, 248, 0.15);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform .25s ease, border-color .25s ease;
+        }
+
+        .product-row:hover {
+            transform: translateX(5px);
+            border-color: var(--blue-light);
+        }
+
+        .product-image {
+            height: 100%;
+            min-height: 119px;
+            clip-path: polygon(0 0, 100% 0, 88% 100%, 0 90%);
+        }
+
+        .product-copy {
+            align-self: center;
+            padding: 11px 12px;
+        }
+
+        .product-no {
+            font-size: 11px;
+        }
+
+        .product-copy h4 {
+            margin: 5px 0 4px;
+            color: var(--blue-light);
+            font-size: 17.6px;
+            line-height: 1.2;
+        }
+
+        .product-copy p {
+            margin: 0;
+            font-size: 15.4px;
+            line-height: 1.35;
+            color: var(--text-muted);
+        }
+
+        .ingredients {
+            background-color: #080C14;
+            background-image: repeating-linear-gradient(135deg, rgba(37, 99, 235, .03) 0 1px, transparent 1px 13px);
+        }
+
+        .ingredients h2 {
+            width: min(100%, 350px);
+            margin: 0 auto 14px;
+            padding: 13px 16px 11px;
+            clip-path: polygon(2% 8%, 96% 0, 100% 82%, 92% 95%, 8% 100%, 0 20%);
+            background: var(--blue);
+            color: var(--white);
+            font-size: 31.9px;
+            line-height: 1.18;
+            text-align: center;
+            text-wrap: balance;
+            box-shadow: 0 4px 20px rgba(37, 99, 235, .35);
+        }
+
+        .ingredients h2 span {
+            color: #BAE6FD;
+        }
+
+        .ingredients .section-lead {
+            width: fit-content;
+            max-width: 100%;
+            margin: 0 auto 25px;
+            padding: 5px 14px 3px;
+            background: #1E293B;
+            color: var(--blue-light);
+            border: 1px solid rgba(56, 189, 248, .3);
+            border-radius: 999px;
+            font-size: 18.7px;
+            line-height: 1.35;
+            text-align: center;
+            text-wrap: balance;
+        }
+
+        .ingredient-hero {
+            position: relative;
+            height: 196px;
+            margin: 19px 0 16px;
+            clip-path: polygon(0 0, 100% 0, 100% 82%, 88% 100%, 0 90%);
+        }
+
+        .ingredient-hero::after {
+            content: "";
+            position: absolute;
+            inset: 40% 0 0;
+            background: linear-gradient(0deg, rgba(8, 11, 16, .85), transparent);
+        }
+
+        .ingredient-hero span {
+            position: absolute;
+            z-index: 1;
+            bottom: 18px;
+            left: 17px;
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        .ingredient-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            padding: 9px 2px 0;
+        }
+
+        .ingredient-item {
+            position: relative;
+            min-width: 0;
+            padding: 12px 8px 14px;
+            border: 1px solid rgba(56, 189, 248, .25);
+            border-radius: 38px 38px 29px 29px;
+            background: var(--card-dark);
+            box-shadow: 0 5px 13px rgba(0, 0, 0, .4);
+            text-align: center;
+            transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+        }
+
+        .ingredient-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--blue-light);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, .48), 0 0 0 2px rgba(56, 189, 248, .12);
+        }
+
+        .ingredient-photo {
+            width: 100%;
+            height: 128px;
+            margin: 0 auto 10px;
+            border-radius: 50%;
+            background: #1E293B;
+            transition: transform .35s ease, filter .35s ease;
+        }
+
+        .ingredient-photo img {
+            border-radius: inherit;
+        }
+
+        .ingredient-item>span {
+            display: block;
+            margin-bottom: 6px;
+            border-radius: 999px;
+            background: var(--blue);
+            color: var(--white);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.65;
+        }
+
+        .ingredient-item p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.35;
+            color: var(--text-muted);
+            text-wrap: balance;
+        }
+
+        .ingredient-item:hover .ingredient-photo {
+            transform: scale(1.035);
+            filter: saturate(1.12) brightness(1.08);
+        }
+
+        .ingredient-item b {
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            width: 34px;
+            height: 34px;
+            transform: translateX(-50%);
+            border: 2px solid #080C14;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: var(--blue-light);
+            color: #000;
+            font-size: 15.4px;
+            font-weight: 700;
+        }
+
+        .ingredient-caption {
+            margin: 16px auto 12px;
+            padding: 7px 12px;
+            border: 1px solid var(--blue-light);
+            border-radius: 999px;
+            background: rgba(37, 99, 235, 0.15);
+            color: var(--blue-light);
+            font-size: 18.7px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .ingredient-note {
+            margin: 0 auto 12px;
+            color: var(--white);
+            font-size: 20.9px;
+            font-weight: 700;
+            line-height: 1.4;
+            text-align: center;
+            text-wrap: balance;
+        }
+
+        .ingredient-disclaimer {
+            margin: 0;
+            padding: 10px 12px;
+            border-radius: 14px;
+            background: #162033;
+            color: #BAE6FD;
+            font-size: 13.2px;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        .quality {
+            padding: 28px 20px 24px;
+            background: #0B111D;
+            color: var(--ink);
+        }
+
+        .quality-kicker {
+            display: table;
+            margin: 0 0 12px;
+            padding: 3px 10px;
+            border: 1px solid var(--blue-light);
+            border-radius: 999px;
+            color: var(--blue-light);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: .08em;
+        }
+
+        .quality-copy {
+            padding: 0 2px 20px;
+            text-align: center;
+        }
+
+        .quality h2 {
+            margin-bottom: 10px;
+            font-size: 29.7px;
+            line-height: 1.22;
+        }
+
+        .quality h2 span {
+            display: block;
+            color: var(--blue-light);
+        }
+
+        .quality-copy p {
+            max-width: 38ch;
+            margin: 0 auto;
+            color: var(--blue-light);
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1.45;
+        }
+
+        .quality-marks {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .quality-marks span {
+            min-width: 0;
+            min-height: 190px;
+            display: grid;
+            grid-template-rows: 120px auto;
+            align-content: start;
+            justify-items: center;
+            gap: 5px;
+            padding: 14px 8px 12px;
+            border: 1px solid rgba(56, 189, 248, .28);
+            border-radius: 16px;
+            background: linear-gradient(145deg, #162033, #0F172A);
+            color: var(--ink);
+            text-align: center;
+            box-shadow: 0 7px 18px rgba(0, 0, 0, .35);
+            transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+        }
+
+        .quality-marks span:hover {
+            transform: translateY(-3px);
+            border-color: var(--blue-light);
+        }
+
+        .quality-marks img {
+            width: 112px;
+            height: 112px;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+        }
+
+        .quality-marks span:hover {
+            transform: translateY(-5px);
+            border-color: var(--blue-light);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, .48), 0 0 0 2px rgba(56, 189, 248, .12);
+        }
+
+        .quality-marks b {
+            align-self: start;
+            width: 100%;
+            margin-top: 5px;
+            padding: 2px 1px;
+            border-radius: 999px;
+            background: var(--blue) !important;
+            color: var(--white);
+            font-size: 15px;
+            line-height: 1.35;
+        }
+
+        .quality-marks small {
+            display: none;
+        }
+
+        .quality-marks .mark-iso b {
+            background: #0284C7;
+        }
+
+        .quality-marks .mark-fssai b {
+            background: #2563EB;
+        }
+
+        .quality-marks .mark-lab b {
+            background: #0D9488;
+        }
+
+        .quality-marks small {
+            font-size: 12.1px;
+            line-height: 1.3;
+            color: var(--text-muted);
+            text-wrap: balance;
+        }
+
+        .quality-note {
+            display: grid;
+            grid-template-columns: 44px 1fr;
+            gap: 12px;
+            align-items: center;
+            margin-top: 13px;
+            padding: 12px;
+            border: 1px solid rgba(56, 189, 248, .2);
+            border-radius: 16px;
+            background: #111A2E;
+        }
+
+        .quality-note span {
+            width: 40px;
+            height: 46px;
+            display: grid;
+            place-items: center;
+            clip-path: polygon(50% 0, 100% 18%, 94% 72%, 50% 100%, 6% 72%, 0 18%);
+            background: var(--blue);
+            color: var(--white);
+            font-size: 27.5px;
+            font-weight: 700;
+        }
+
+        .quality-note p {
+            margin: 0;
+            font-size: 15.4px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--white);
+        }
+
+        .compare {
+            display: none;
+            padding: 36px 16px 32px;
+            background:
+                radial-gradient(ellipse at 0 4%, rgba(37, 99, 235, .15), transparent 45%),
+                var(--black);
+        }
+
+        .compare h2 {
+            margin: 0 auto 8px;
+            font-size: 29.7px;
+            line-height: 1.18;
+            text-align: center;
+            text-wrap: balance;
+        }
+
+        .compare h2 span {
+            display: block;
+            color: var(--blue-light);
+        }
+
+        .compare-disclaimer {
+            margin: 0 auto 20px;
+            font-size: 13.2px;
+            line-height: 1.4;
+            color: var(--text-muted);
+            text-align: center;
+            text-wrap: balance;
+        }
+
+        .compare-head,
+        .compare-row {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1fr);
+            gap: 4px;
+        }
+
+        .compare-head {
+            align-items: end;
+            margin-bottom: 9px;
+        }
+
+        .compare-head h3 {
+            margin: 0;
+            font-size: 15.4px;
+            line-height: 1.2;
+            text-align: center;
+            text-wrap: balance;
+            color: var(--white);
+        }
+
+        .compare-head h3:last-child {
+            color: var(--blue-light);
+        }
+
+        .compare-head small {
+            display: block;
+            margin-top: 4px;
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .compare-row {
+            align-items: stretch;
+            margin-top: 5px;
+        }
+
+        .compare-cell {
+            min-width: 0;
+            min-height: 58px;
+            display: grid;
+            grid-template-columns: 34px minmax(0, 1fr) 18px;
+            gap: 4px;
+            align-items: center;
+            padding: 5px;
+            border-radius: 12px;
+        }
+
+        .compare-left-cell {
+            background: #1A1F2C;
+            border: 1px solid rgba(255, 255, 255, .06);
+            color: #CBD5E1;
+        }
+
+        .compare-right-cell {
+            border: 1px solid rgba(56, 189, 248, .35);
+            background: #0F1C33;
+            color: var(--white);
+        }
+
+        .compare-thumb {
+            width: 34px;
+            height: 34px;
+            overflow: hidden;
+            border-radius: 50%;
+            background-color: #1E293B;
+        }
+
+        .compare-problem {
+            background-image: url("./Image/problem.avif");
+            background-size: 200% 300%;
+        }
+
+        .compare-problem-1 { background-position: 0 0; }
+        .compare-problem-2 { background-position: 100% 0; }
+        .compare-problem-3 { background-position: 0 50%; }
+        .compare-problem-4 { background-position: 100% 50%; }
+        .compare-problem-5 { background-position: 0 100%; }
+        .compare-problem-6 { background-position: 100% 100%; }
+
+        .compare-product img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .compare-copy {
+            min-width: 0;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.25;
+            overflow-wrap: anywhere;
+        }
+
+        .compare-status {
+            width: 18px;
+            height: 18px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            color: var(--white);
+            font-size: 16.5px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .compare-status .icon {
+            width: 12px;
+            height: 12px;
+            stroke-width: 3;
+        }
+
+        .compare-no {
+            background: #DC2626;
+        }
+
+        .compare-yes {
+            background: var(--blue);
+        }
+
+        .compare-arrow {
+            width: 24px;
+            height: 24px;
+            align-self: center;
+            display: grid;
+            place-items: center;
+            border: 2px solid var(--black);
+            border-radius: 50%;
+            background: var(--blue-light);
+            color: #000;
+            font-size: 19.8px;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .compare-arrow .icon {
+            width: 15px;
+            height: 15px;
+            stroke-width: 3;
+        }
+
+        @media (max-width: 360px) {
+            .compare {
+                padding-inline: 12px;
+            }
+
+            .compare-head h3 {
+                font-size: 13.2px;
+            }
+
+            .compare-cell {
+                grid-template-columns: 31px minmax(0, 1fr) 16px;
+                gap: 4px;
+                padding: 4px;
+            }
+
+            .compare-thumb {
+                width: 31px;
+                height: 31px;
+            }
+
+            .compare-copy {
+                font-size: 12.1px;
+            }
+
+            .compare-status {
+                width: 16px;
+                height: 16px;
+                font-size: 14.3px;
+            }
+        }
+
+        .experience {
+            min-height: 335px;
+            display: flex;
+            align-items: flex-end;
+            background: #0A1424;
+            color: var(--white);
+        }
+
+        .experience-photo {
+            position: absolute;
+            inset: 0 0 0 30%;
+            clip-path: polygon(17% 0, 100% 0, 100% 100%, 0 100%);
+            opacity: .35;
+        }
+
+        .experience::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, #0A1424 4%, rgba(10, 20, 36, .94) 43%, rgba(10, 20, 36, .2));
+        }
+
+        .experience-copy {
+            z-index: 1;
+            position: relative;
+            max-width: 330px;
+        }
+
+        .experience h2 {
+            max-width: 310px;
+        }
+
+        .experience-copy p {
+            margin-bottom: 8px;
+        }
+
+        .experience-intro {
+            color: var(--blue-light);
+            font-weight: 700;
+        }
+
+        .experience ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .experience li {
+            margin-top: 8px;
+            padding-left: 22px;
+            position: relative;
+            color: #E2E8F0;
+        }
+
+        .experience li::before {
+            content: "+";
+            position: absolute;
+            left: 0;
+            color: var(--blue-light);
+            font-weight: 700;
+        }
+
+        .experience-mark {
+            z-index: 1;
+            position: absolute;
+            right: 18px;
+            top: 25px;
+            color: var(--blue-light);
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1;
+            text-align: right;
+            transform: rotate(8deg);
+        }
+
+        .experience-mark span {
+            font-size: 9.9px;
+            letter-spacing: .08em;
+        }
+
+        .reviews {
+            background: #0B111D;
+        }
+
+        .reviews > h2 {
+            margin-bottom: 18px;
+            text-align: center;
+        }
+
+        .review-banner {
+            position: relative;
+            height: 160px;
+            margin: -38px -24px 23px;
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 8% 100%);
+        }
+
+        .review-banner::after {
+            content: "";
+            position: absolute;
+            inset: 25% 0 0;
+            background: linear-gradient(0deg, rgba(8, 11, 16, .85), transparent);
+        }
+
+        .review-banner span {
+            position: absolute;
+            z-index: 1;
+            bottom: 17px;
+            left: 24px;
+            color: var(--white);
+            font-size: 19.8px;
+            font-weight: 600;
+        }
+
+        .sample-warning {
+            padding: 10px 12px;
+            border-left: 3px solid var(--blue-light);
+            background: var(--card-dark);
+            font-size: 15.4px;
+            color: #CBD5E1;
+        }
+
+        .review-quote {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 12px;
+            padding: 18px 15px;
+            border: 1px solid rgba(56, 189, 248, .28);
+            border-radius: 16px;
+            background: linear-gradient(145deg, #162033 0%, #0F172A 100%);
+            box-shadow: 0 5px 16px rgba(0, 0, 0, .4);
+            text-align: center;
+            transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+        }
+
+        .review-quote:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, .48), 0 0 0 2px rgba(56, 189, 248, .12);
+            border-color: var(--blue-light);
+        }
+
+        .review-avatar-wrap {
+            position: relative;
+            width: 96px;
+            height: 96px;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+            border: 3px solid var(--blue-light);
+            border-radius: 50%;
+            background: #162033;
+            color: var(--blue-light);
+            font-size: 24.2px;
+            font-weight: 700;
+        }
+
+        .review-avatar {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            object-fit: cover;
+        }
+
+        .review-avatar[hidden] {
+            display: none;
+        }
+
+        .review-content {
+            min-width: 0;
+            width: 100%;
+        }
+
+        .review-sample,
+        .review-product {
+            display: none;
+        }
+
+        .review-topline,
+        .review-byline {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px 8px;
+        }
+
+        .review-topline {
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+
+        .stars {
+            color: var(--blue-light);
+            letter-spacing: .02em;
+            font-size: 19.8px;
+            line-height: 1;
+        }
+
+        .stars .icon {
+            width: .95em;
+            height: .95em;
+            margin-right: 1px;
+            fill: currentColor;
+            stroke: none;
+        }
+
+        .review-sample {
+            padding: 3px 7px;
+            border-radius: 999px;
+            background: rgba(37, 99, 235, .2);
+            color: var(--blue-light);
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 1.2;
+            border: 1px solid rgba(56, 189, 248, .3);
+        }
+
+        .review-quote blockquote {
+            margin: 5px 0 8px;
+            font-size: 15.4px;
+            line-height: 1.42;
+            color: #E2E8F0;
+        }
+
+        .review-byline {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            gap: 3px 10px;
+        }
+
+        .review-byline p {
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .review-quote p {
+            margin: 0;
+            color: var(--blue-light);
+            font-size: 15.4px;
+            font-weight: 700;
+        }
+
+        .review-location {
+            color: var(--text-muted);
+            font-size: 12.1px;
+        }
+
+        .review-product {
+            display: none;
+            margin-top: 4px;
+            color: var(--text-muted);
+            font-size: 11px;
+        }
+
+        @media (max-width: 360px) {
+            .review-quote {
+                grid-template-columns: 66px minmax(0, 1fr);
+                gap: 9px;
+                padding: 10px;
+            }
+
+            .review-avatar-wrap {
+                width: 66px;
+                height: 66px;
+            }
+
+            .review-quote blockquote {
+                font-size: 14.3px;
+            }
+        }
+
+        .review-disclaimer {
+            margin: 15px 0 0;
+            font-size: 14.3px;
+            line-height: 1.5;
+            color: var(--text-muted);
+        }
+
+        .offer {
+            padding: 22px 14px 20px;
+            border: 1px solid rgba(56, 189, 248, .35);
+            border-radius: 18px;
+            background: linear-gradient(180deg, #111A2E, #09101C);
+            color: var(--white);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
+        }
+
+        /* Minimal offer presentation: title, price, image and one CTA. */
+        .offer .offer-perks {
+            display: none;
+        }
+
+        .offer .offer-label {
+            margin-bottom: 8px;
+        }
+
+        .offer .offer-photo {
+            max-height: 190px;
+            margin: 12px auto 16px;
+        }
+
+        .offer .offer-copy:last-child {
+            display: flex;
+            justify-content: center;
+        }
+
+        .offer .offer-copy:last-child .button {
+            width: min(100%, 320px);
+        }
+
+        .offer-photo {
+            aspect-ratio: 3 / 2;
+            margin: 0 0 8px;
+            overflow: hidden;
+            border: 1px solid rgba(56, 189, 248, .2);
+            border-radius: 12px;
+            background: #162033;
+            box-shadow: 0 5px 16px rgba(0, 0, 0, .4);
+        }
+
+        .offer-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .offer-copy {
+            text-align: center;
+        }
+
+        .offer-label {
+            width: fit-content;
+            max-width: 100%;
+            margin: 0 auto 13px;
+            padding: 8px 18px;
+            border: 1px solid rgba(255, 255, 255, .2);
+            border-radius: 999px;
+            background: linear-gradient(100deg, #2563EB, #0284C7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            color: var(--white);
+            font-size: 16.5px;
+            font-weight: 700;
+            box-shadow: 0 5px 15px rgba(37, 99, 235, .4);
+        }
+
+        .offer h2 {
+            margin: 0 0 4px;
+            color: var(--white);
+            font-size: 30.8px;
+            line-height: 1.15;
+            text-wrap: balance;
+        }
+
+        .offer h2 em {
+            display: block;
+            color: var(--blue-light);
+            font-style: normal;
+            font-size: 31.9px;
+        }
+
+        .offer-subtitle {
+            margin-bottom: 0;
+            color: #94A3B8;
+            font-size: 17.6px;
+            line-height: 1.4;
+        }
+
+        .offer-perks {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 6px;
+            margin: 12px 0 8px;
+            text-align: center;
+        }
+
+        .offer-perk {
+            min-width: 0;
+            min-height: 102px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            padding: 7px 4px;
+            border: 1px solid rgba(56, 189, 248, .18);
+            border-radius: 12px;
+            background: #111A2C;
+            color: var(--white);
+            font-size: 13.2px;
+            line-height: 1.25;
+            box-shadow: 0 3px 9px rgba(0, 0, 0, .3);
+        }
+
+        .offer-perk-icon {
+            width: 36px;
+            height: 36px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: rgba(37, 99, 235, 0.2);
+            color: var(--blue-light);
+        }
+
+        .offer-perk-icon .icon {
+            width: 22px;
+            height: 22px;
+            stroke-width: 2.3;
+        }
+
+        .offer-perk strong {
+            font-size: 13.2px;
+            font-weight: 600;
+            text-wrap: balance;
+        }
+
+        .offer-perk small {
+            color: var(--text-muted);
+            font-size: 11px;
+            line-height: 1.25;
+            text-wrap: balance;
+        }
+
+        .offer-perk:last-child {
+            grid-column: 1 / -1;
+            min-height: 64px;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .offer-perk:last-child .offer-perk-icon {
+            background: rgba(37, 99, 235, 0.25);
+            color: var(--blue-light);
+        }
+
+        .offer-perk-copy {
+            display: grid;
+            gap: 2px;
+        }
+
+        .offer-note {
+            margin: 10px 0 12px;
+            color: var(--blue-light);
+            font-size: 15.4px;
+            font-weight: 600;
+        }
+
+        .offer-medical-note {
+            margin: 8px 0 12px;
+            color: var(--text-muted);
+            font-size: 12.1px;
+            line-height: 1.4;
+        }
+
+        .button-dark {
+            width: 100%;
+            min-height: 56px;
+            border-radius: 999px;
+            background: linear-gradient(100deg, #2563EB, #1D4ED8);
+            color: var(--white);
+            box-shadow: 0 5px 18px rgba(37, 99, 235, .4);
+        }
+
+        .button-dark:hover {
+            background: linear-gradient(100deg, #38BDF8, #2563EB);
+        }
+
+        .offer .fine-print {
+            margin: 12px 0 0;
+            color: var(--text-muted);
+            font-size: 13.2px;
+            text-align: center;
+        }
+
+        .final-cta {
+            overflow: hidden;
+            background: var(--black);
+        }
+
+        .final-image {
+            width: 130px;
+            height: 146px;
+            float: right;
+            margin: 0 -24px 13px 13px;
+            clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 85%);
+        }
+
+        .final-cta h2 {
+            clear: both;
+            font-size: 31.9px;
+        }
+
+        .final-cta>p {
+            margin-bottom: 15px;
+            color: #CBD5E1;
+        }
+
+        .final-cta h3 {
+            margin: 0 0 4px;
+            color: var(--blue-light);
+            font-size: 20.9px;
+        }
+
+        .cta-offer {
+            display: block;
+            margin-bottom: 13px;
+            color: var(--blue);
+        }
+
+        .final-cta .button {
+            width: 100%;
+        }
+
+        .cta-foot {
+            margin: 10px 0 0;
+            font-size: 15.4px;
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        .order {
+            background: #080C14;
+            color: var(--white);
+            border-top: 1px solid rgba(56, 189, 248, .2);
+        }
+
+        .order h2 {
+            color: var(--white);
+            margin-bottom: 3px;
+        }
+
+        .order-lead {
+            margin-bottom: 17px;
+            color: var(--blue-light);
+            font-weight: 700;
+        }
+
+        #order-form {
+            display: grid;
+            gap: 8px;
+            padding: 16px;
+            border: 2px solid var(--blue);
+            background: #0F172A;
+            border-radius: 8px;
+            transition: border-color .2s ease, box-shadow .2s ease;
+        }
+
+        #order-form.is-loading {
+            border-color: var(--blue-light);
+            box-shadow: 0 0 0 3px rgba(56, 189, 248, .35);
+        }
+
+        #order-form label {
+            margin-top: 4px;
+            color: var(--white);
+            font-size: 17.6px;
+            font-weight: 700;
+        }
+
+        #order-form label span {
+            color: var(--blue-light);
+        }
+
+        #order-form input {
+            width: 100%;
+            min-height: 50px;
+            border: 1px solid rgba(56, 189, 248, .25);
+            border-radius: 3px;
+            padding: 10px 12px;
+            background: #1E293B;
+            color: var(--white);
+            outline: none;
+            transition: border .2s ease, box-shadow .2s ease;
+        }
+
+        #order-form textarea {
+            width: 100%; min-height: 92px; resize: vertical;
+            border: 1px solid rgba(56, 189, 248, .25); border-radius: 3px;
+            padding: 10px 12px; background: #1E293B; color: var(--white);
+            outline: none; font: inherit; transition: border .2s ease, box-shadow .2s ease;
+        }
+        #order-form textarea:focus { border-color: var(--blue-light); box-shadow: 0 0 0 3px rgba(56, 189, 248, .25); }
+        #order-form textarea::placeholder { color: #64748B; }
+
+        #order-form input:focus {
+            border-color: var(--blue-light);
+            box-shadow: 0 0 0 3px rgba(56, 189, 248, .25);
+        }
+
+        #order-form input::placeholder {
+            color: #64748B;
+        }
+
+        .phone-field {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            align-items: center;
+            border: 1px solid rgba(56, 189, 248, .25);
+            border-radius: 3px;
+            background: #1E293B;
+            transition: border-color .2s ease, box-shadow .2s ease;
+        }
+
+        .phone-field:focus-within {
+            border-color: var(--blue-light);
+            box-shadow: 0 0 0 3px rgba(56, 189, 248, .25);
+        }
+
+        .country-code {
+            padding: 0 12px;
+            border-right: 1px solid rgba(255, 255, 255, .15);
+            color: var(--blue-light);
+            font-weight: 700;
+        }
+
+        #order-form .phone-field input {
+            min-width: 0;
+            border: 0;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .submit-button {
+            width: 100%;
+            margin-top: 9px;
+        }
+
+        .button-spinner {
+            display: none;
+            width: 22px;
+            height: 22px;
+            flex: 0 0 22px;
+            border: 3px solid rgba(255, 255, 255, .3);
+            border-top-color: var(--blue-light);
+            border-radius: 50%;
+            animation: spin .7s linear infinite;
+        }
+
+        .submit-button.is-loading .button-spinner {
+            display: block;
+        }
+
+        .submit-button.is-loading .button-label {
+            opacity: .88;
+        }
+
+        .submit-button.is-loading {
+            background: #1E293B;
+            cursor: wait;
+        }
+
+        .submit-button:disabled {
+            cursor: wait;
+        }
+
+        .form-loading-overlay {
+            position: fixed;
+            z-index: 1000;
+            inset: 0;
+            display: grid;
+            place-content: center;
+            justify-items: center;
+            gap: 14px;
+            padding: 24px;
+            background: rgba(8, 12, 20, .94);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .form-loading-overlay[hidden] {
+            display: none;
+        }
+
+        .form-loading-overlay p {
+            margin: 0;
+            font-size: 24.2px;
+            font-weight: 700;
+        }
+
+        .overlay-spinner {
+            width: 52px;
+            height: 52px;
+            border: 5px solid rgba(56, 189, 248, .2);
+            border-top-color: var(--blue-light);
+            border-radius: 50%;
+            animation: spin .7s linear infinite;
+        }
+
+        body.is-form-loading {
+            overflow: hidden;
+        }
+
+        .order-perks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 7px;
+            margin-top: 7px;
+            color: var(--blue-light);
+            font-size: 14.3px;
+            font-weight: 700;
+        }
+
+        .order-perks span,
+        .privacy-note,
+        .review-location {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .order-perks .icon {
+            color: var(--blue-light);
+        }
+
+        .privacy-note .icon {
+            color: var(--blue-light);
+        }
+
+        .privacy-note,
+        .form-status,
+        .form-error {
+            margin: 7px 0 0;
+            font-size: 14.3px;
+            line-height: 1.45;
+        }
+
+        .form-error {
+            color: #F87171;
+            font-weight: 700;
+        }
+
+        .form-status {
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .privacy-note {
+            color: var(--text-muted);
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .faq {
+            background: #080C14;
+        }
+
+        .faq h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .faq details {
+            margin: 10px 0;
+            overflow: hidden;
+            border: 1px solid rgba(56, 189, 248, .22);
+            border-radius: 13px;
+            background: linear-gradient(145deg, #162033, #0F172A);
+            box-shadow: 0 5px 14px rgba(0, 0, 0, .28);
+            transition: border-color .25s ease, box-shadow .25s ease;
+        }
+
+        .faq details[open] {
+            border-color: var(--blue-light);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .4), 0 0 0 2px rgba(56, 189, 248, .1);
+        }
+
+        .faq summary {
+            position: relative;
+            padding: 16px 42px 16px 16px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--white);
+            cursor: pointer;
+            list-style: none;
+        }
+
+        .faq summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq summary::after {
+            content: "+";
+            position: absolute;
+            right: 15px;
+            top: 11px;
+            color: var(--blue-light);
+            font-size: 25.3px;
+            transition: transform .2s ease;
+        }
+
+        .faq details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        .faq details p {
+            margin: 0;
+            padding: 0 16px 17px;
+            border-top: 1px solid rgba(56, 189, 248, .14);
+            padding-top: 12px;
+            font-size: 16px;
+            line-height: 1.55;
+            color: #CBD5E1;
+        }
+
+        .disclaimer {
+            padding-top: 2px;
+            background: #04060A;
+            color: var(--white);
+        }
+
+        .disclaimer-photo {
+            height: 120px;
+            margin: 0 0 20px;
+            clip-path: polygon(0 0, 100% 7%, 94% 100%, 7% 91%);
+        }
+
+        .disclaimer>p {
+            margin-bottom: 8px;
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .medical-note {
+            color: var(--blue-light);
+            font-size: 16.5px;
+        }
+
+        .footer-brand {
+            display: flex;
+            flex-direction: column;
+            margin-top: 22px;
+            color: var(--white);
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-decoration: none;
+        }
+
+        .footer-brand span {
+            color: var(--blue-light);
+            font-size: 12.1px;
+            letter-spacing: .12em;
+        }
+
+        .footer-smallprint {
+            margin: 16px 0 0;
+            color: var(--text-muted);
+            font-size: 15.4px;
+            line-height: 1.5;
+        }
+
+        .policy-links {
+            margin-top: 16px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(56, 189, 248, .2);
+        }
+
+        .policy-link-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 2px 6px;
+        }
+
+        .policy-link {
+            padding: 5px 2px;
+            border: 0;
+            background: transparent;
+            color: var(--blue-light);
+            font: inherit;
+            font-size: 14.3px;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            cursor: pointer;
+        }
+
+        .policy-link:hover,
+        .policy-link:focus-visible {
+            color: var(--white);
+        }
+
+        .policy-separator {
+            color: var(--blue-light);
+            opacity: .4;
+            user-select: none;
+        }
+
+        .disclaimer {
+            padding: 18px 14px 16px;
+            background: #030509;
+            border-top: 1px solid rgba(56, 189, 248, .12);
+        }
+
+        .disclaimer>p {
+            max-width: 390px;
+            margin: 0 auto 12px;
+            color: rgba(203, 213, 225, .48);
+            font-size: 9.5px;
+            line-height: 1.45;
+            text-align: center;
+        }
+
+        .policy-links {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top-color: rgba(56, 189, 248, .12);
+        }
+
+        .policy-link-row {
+            gap: 1px 5px;
+        }
+
+        .policy-link {
+            padding: 3px 1px;
+            color: rgba(125, 211, 252, .62);
+            font-size: 11px;
+            line-height: 1.25;
+        }
+
+        .policy-separator {
+            color: rgba(125, 211, 252, .3);
+            font-size: 10px;
+        }
+
+        .policy-dialog {
+            width: min(420px, calc(100% - 32px));
+            max-height: min(80vh, 640px);
+            overflow-y: auto;
+            padding: 24px 20px 20px;
+            border: 1px solid var(--blue);
+            background: #0F172A;
+            color: var(--white);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .8);
+        }
+
+        .policy-dialog::backdrop {
+            background: rgba(0, 0, 0, .75);
+        }
+
+        .policy-dialog h2 {
+            margin: 0 40px 14px 0;
+            color: var(--blue-light);
+            font-size: 26.4px;
+            line-height: 1.35;
+        }
+
+        .policy-dialog p {
+            margin: 0 0 12px;
+            font-size: 17.6px;
+            line-height: 1.6;
+            color: #CBD5E1;
+        }
+
+        .policy-close {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 36px;
+            height: 36px;
+            border: 0;
+            background: #1E293B;
+            color: var(--blue-light);
+            font-size: 25.3px;
+            line-height: 1;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .policy-close:hover {
+            background: var(--blue);
+            color: var(--white);
+        }
+
+        @media (max-width: 480px) {
+            .policy-link {
+                font-size: 11px;
+            }
+
+            .policy-dialog {
+                padding: 22px 16px 18px;
+            }
+        }
+
+        .sticky-cta {
+            position: fixed;
+            z-index: 20;
+            right: 0;
+            bottom: max(12px, env(safe-area-inset-bottom));
+            left: 0;
+            width: min(450px, calc(100% - 20px));
+            margin-inline: auto;
+            padding: 10px 10px 10px 16px;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(56, 189, 248, .38);
+            background: linear-gradient(105deg, #0b1220 0%, #111c31 55%, #0d1728 100%);
+            color: #f8fafc;
+            box-shadow: 0 12px 34px rgba(0, 0, 0, .58), 0 0 22px rgba(56, 189, 248, .12);
+            animation: sticky-enter .35s cubic-bezier(.2, .8, .2, 1) both;
+            border-radius: 18px;
+        }
+
+        .sticky-cta::before {
+            content: "";
+            position: absolute;
+            inset: 0 auto 0 0;
+            width: 5px;
+            background: linear-gradient(180deg, #38bdf8, #2563eb);
+        }
+
+        .sticky-cta[hidden] {
+            display: none;
+        }
+
+        .visually-hidden-frame {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip-path: inset(50%);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .sticky-offer {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            line-height: 1.15;
+        }
+
+        .sticky-offer strong {
+            width: fit-content;
+            padding: 4px 9px;
+            border-radius: 999px;
+            background: rgba(56, 189, 248, .14);
+            color: #7dd3fc;
+            font-size: 12px;
+            letter-spacing: .08em;
+            line-height: 1;
+        }
+
+        .sticky-offer span {
+            color: #cbd5e1;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .sticky-button {
+            min-height: 42px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            padding: 10px 14px;
+            background: linear-gradient(135deg, #2563eb, #38bdf8);
+            color: #fff;
+            font-size: 15.5px;
+            font-weight: 700;
+            text-decoration: none;
+            white-space: nowrap;
+            border-radius: 12px;
+            box-shadow: 0 5px 14px rgba(37, 99, 235, .35);
+            transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+        }
+
+        .sticky-button:hover {
+            transform: translateY(-2px);
+            filter: saturate(1.12) brightness(1.08);
+            color: #fff;
+            box-shadow: 0 8px 18px rgba(56, 189, 248, .32);
+        }
+
+        @keyframes sticky-enter {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 360px) {
+            .section-pad {
+                padding-inline: 18px;
+            }
+
+            .pain-list {
+                margin-inline: -18px;
+            }
+
+            .topline {
+                padding-inline: 18px;
+            }
+
+            h1 {
+                font-size: 30.8px;
+            }
+
+            .pain-row {
+                grid-template-columns: 22px 46px 1fr 14px;
+                gap: 7px;
+            }
+
+            .pain-photo {
+                width: 42px;
+                height: 42px;
+            }
+
+            .pain-row h3 {
+                font-size: 16.5px;
+            }
+
+            .product-row {
+                grid-template-columns: 96px 1fr;
+            }
+
+            .quality-copy {
+                padding-inline: 18px;
+            }
+
+            .quality>.fine-print {
+                padding-inline: 18px;
+            }
+
+            .offer-photo,
+            .review-banner {
+                margin-inline: -18px;
+            }
+
+            .review-banner {
+                margin-top: -38px;
+            }
+
+            .final-image {
+                margin-right: -18px;
+            }
+
+            .sticky-cta {
+                gap: 6px;
+                padding: 8px 8px 8px 13px;
+                border-radius: 15px;
+            }
+
+            .sticky-button {
+                padding-inline: 10px;
+                font-size: 14.2px;
+            }
+
+            .sticky-offer span { font-size: 12px; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important;
+            }
+        }
     </style>
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="topbar">
-      <div class="wrap topbar-content">
-        <a class="brand" href="#home" aria-label="White Spot Care">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path
-                d="M12 3c4 4.4 6.5 7.4 6.5 11a6.5 6.5 0 1 1-13 0c0-3.6 2.5-6.6 6.5-11Z"
-                stroke="currentColor"
-                stroke-width="1.8"
-              />
-              <path
-                d="M9 15c.4 1.2 1.3 1.9 2.8 2"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="round"
-              />
-            </svg>
-          </span>
-          White Spot Care
-        </a>
-        <nav class="nav" aria-label="मुख्य नेविगेशन">
-          <a href="#understand">लक्षण</a>
-          <a href="#ingredients">सामग्री</a>
-          <a href="#faqs">FAQs</a>
-          <a class="btn" href="#contact">जानकारी पाएँ →</a>
-        </nav>
-      </div>
-    </header>
+</head>
 
-    <main>
-      <!-- Hero Section -->
-      <section class="hero" id="home">
-        <div class="wrap">
-          <div class="eyebrow">सटीक जानकारी • सही त्वचा देखभाल</div>
-          <h1>
-            त्वचा पर सफेद धब्बे?<br />
-            <em>सही कारण और देखभाल समझें</em>
-          </h1>
-          <p class="hero-copy">
-            त्वचा पर हल्के या सफेद दाग दिखना कई कारणों से हो सकता है। बिना घबराए सही जानकारी लें, 
-            त्वचा विशेषज्ञ से परामर्श करें और पारंपरिक हर्बल सपोर्ट के साथ त्वचा का ख्याल रखें।
-          </p>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+        <symbol id="icon-gift" viewBox="0 0 24 24"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 7v14M12 7H7.5a2.5 2.5 0 1 1 2.5-2.5C10 6 12 7 12 7Zm0 0h4.5A2.5 2.5 0 1 0 14 4.5C14 6 12 7 12 7Z"/></symbol>
+        <symbol id="icon-truck" viewBox="0 0 24 24"><path d="M3 6h11v12H3zM14 10h4l3 3v5h-7z"/><circle cx="7.5" cy="18" r="1.5"/><circle cx="18" cy="18" r="1.5"/><path d="M14 13h7"/></symbol>
+        <symbol id="icon-clipboard" viewBox="0 0 24 24"><path d="M9 4H5v17h14V4h-4M9 3h6v4H9zM8 12h8M8 16h8"/></symbol>
+        <symbol id="icon-package" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5ZM3 8v10l9 5 9-5V8M12 13v10M7.5 5.5l9 5"/></symbol>
+        <symbol id="icon-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></symbol>
+        <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+        <symbol id="icon-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 2-1.6L22 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+        <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+        <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2-4.6-4.4 6.3-.9L12 2.8Z"/></symbol>
+        <symbol id="icon-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+        <symbol id="icon-shield-check" viewBox="0 0 24 24"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    </svg>
+    <main class="page-shell">
 
-          <div class="hero-actions">
-            <a class="btn" href="#understand">समस्या के कारण जानें →</a>
-            <a class="btn outline" href="#contact">विशेषज्ञ से सलाह लें</a>
-          </div>
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <img src="./Image/banner.avif" alt="WhiteSpot Care Hero Image" loading="eager" fetchpriority="high">
+        </section>
 
-          <p class="hero-note">
-            प्रत्येक सफेद धब्बा विटिलिगो नहीं होता; यह फंगल इन्फेक्शन या सन-स्पॉट भी हो सकता है।
-          </p>
-
-          <!-- Skin Art Visual -->
-          <div class="visual" role="img" aria-label="त्वचा पर पिगमेंटेशन संतुलन">
-            <div class="visual-halo"></div>
-            <div class="skin-art">
-              <i class="spot s1"></i>
-              <i class="spot s2"></i>
-              <i class="spot s3"></i>
-              <i class="spot s4"></i>
-              <i class="spot s5"></i>
+        <section class="pain" aria-labelledby="pain-title">
+            <h2 id="pain-title">समस्या को समझें</h2>
+            <p class="section-lead">सफेद दागों के साथ दिखाई देने वाले बदलाव</p>
+            <div class="pain-list">
+                <div class="pain-card-grid">
+                    <!-- हर card की image और heading यहाँ आसानी से बदलें। -->
+                    <article class="pain-card">
+                        <img src="./Image/problem1.avif" alt="Card image 1" loading="lazy">
+                        <h3>सफेद दागों से झिझक</h3>
+                    </article>
+                    <article class="pain-card">
+                        <img src="./Image/problem2.avif" alt="Card image 2" loading="lazy">
+                        <h3>आत्मविश्वास में कमी</h3>
+                    </article>
+                    <article class="pain-card">
+                        <img src="./Image/problem3.avif" alt="Card image 3" loading="lazy">
+                        <h3>फोटो खिंचवाने में झिझक</h3>
+                    </article>
+                    <article class="pain-card">
+                        <img src="./Image/problem4.avif" alt="Card image 4" loading="lazy">
+                        <h3>लोगों के सवालों की चिंता</h3>
+                    </article>
+                    <article class="pain-card">
+                        <img src="./Image/problem5.avif" alt="Card image 5" loading="lazy">
+                        <h3>इलाज के लिए भटकना</h3>
+                    </article>
+                </div>
             </div>
-            <div class="art-label one"><span></span>त्वचा पिगमेंटेशन संतुलन</div>
-            <div class="art-label two"><span></span>चिकित्सकीय परामर्श ज़रूरी</div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Understanding Symptoms -->
-      <section class="section tint" id="understand">
-        <div class="wrap">
-          <div class="section-head">
-            <div class="eyebrow">लक्षण और बदलाव</div>
-            <h2>सफेद धब्बों से जुड़े संकेत</h2>
-            <p>त्वचा में होने वाले बदलावों को पहचानना सही देखभाल का पहला कदम है।</p>
-          </div>
-
-          <div class="roadmap">
-            <article>
-              <span>01</span>
-              <p>त्वचा के किसी हिस्से पर हल्का या दूधिया सफेद रंग का धब्बा दिखना</p>
-            </article>
-            <article>
-              <span>02</span>
-              <p>समय के साथ धब्बे के आकार, फैलाव या संख्या में वृद्धि होना</p>
-            </article>
-            <article>
-              <span>03</span>
-              <p>हाथों, कलाई, कोहनी, होठों या पैरों पर मुख्य रूप से प्रभाव दिखना</p>
-            </article>
-            <article>
-              <span>04</span>
-              <p>धब्बे वाली जगह के रोएं (बाल) सफेद होना</p>
-            </article>
-            <article>
-              <span>05</span>
-              <p>धूप के संपर्क में आने पर प्रभावित त्वचा पर हल्की लालिमा या जलन महसूस होना</p>
-            </article>
-          </div>
-
-          <div class="notice">
-            <strong>महत्वपूर्ण परामर्श:</strong> यदि धब्बे तेज़ी से फैल रहे हैं, तो तुरंत डर्मेटोलॉजिस्ट (त्वचा विशेषज्ञ) से वुड्स लैंप टेस्ट (Wood's Lamp Examination) कराएँ।
-          </div>
-        </div>
-      </section>
-
-      <!-- Product & Herbal Approach -->
-      <section class="section" id="care">
-        <div class="wrap product-grid">
-          <div class="product-visual" role="img" aria-label="हर्बल सपोर्ट बॉटल">
-            <div class="bottle"></div>
-          </div>
-          <div class="product-copy">
-            <div class="eyebrow">Natural Support</div>
-            <h2>आयुर्वेदिक स्किन केयर सपोर्ट</h2>
-            <p>
-              पारंपरिक भारतीय जड़ी-बूटियों पर आधारित यह फॉर्मूलेशन त्वचा के प्राकृतिक मेलेनिन 
-              (Melanin) संतुलन और समग्र त्वचा स्वास्थ्य को पोषण प्रदान करने में सहायक है।
-            </p>
-            <ul class="check-list">
-              <li><span class="check">✓</span><span>100% शुद्ध हर्बल अर्क से निर्मित</span></li>
-              <li><span class="check">✓</span><span>त्वचा के रक्त संचार और पोषण को बढ़ावा</span></li>
-              <li><span class="check">✓</span><span>दैनिक उपयोग के लिए सुरक्षित एवं सरल</span></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- 4 Pillars of Skin Care -->
-      <section class="section tint">
-        <div class="wrap">
-          <div class="section-head">
-            <div class="eyebrow">देखभाल के नियम</div>
-            <h2>त्वचा स्वास्थ्य के 4 बुनियादी स्तंभ</h2>
-            <p>केवल दवा नहीं, संतुलित दिनचर्या से त्वचा स्वस्थ रहती है।</p>
-          </div>
-
-          <div class="care-steps">
-            <article>
-              <span>01</span>
-              <div>
-                <h3>Melanin Pigment Care</h3>
-                <p>धूप से सुरक्षा (Sunscreen) अपनाएँ ताकि प्रभावित त्वचा सुरक्षित रहे।</p>
-              </div>
-            </article>
-            <article>
-              <span>02</span>
-              <div>
-                <h3>Antioxidant-Rich Diet</h3>
-                <p>तांबे के बर्तन का पानी, हरी सब्जियाँ और विटामिन B-12 युक्त आहार लें।</p>
-              </div>
-            </article>
-            <article>
-              <span>03</span>
-              <div>
-                <h3>Stress Management</h3>
-                <p>तनाव (Stress) ऑटोइम्यून समस्याओं को बढ़ाता है; नियमित प्राणायाम करें।</p>
-              </div>
-            </article>
-            <article>
-              <span>04</span>
-              <div>
-                <h3>Expert Guidance</h3>
-                <p>किसी भी घरेलू नुस्खे से पहले योग्य डॉक्टर या आयुर्वेदाचार्य की राय लें।</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Accurate Herbal Ingredients -->
-      <section class="section" id="ingredients">
-        <div class="wrap">
-          <div class="section-head">
-            <div class="eyebrow">प्रामाणिक तत्व</div>
-            <h2>प्रमुख प्राकृतिक घटक (Key Ingredients)</h2>
-            <p>आयुर्वेद में त्वचा वर्णकता (Pigmentation) के लिए अनुशंसित तत्व:</p>
-          </div>
-
-          <div class="ingredients">
-            <div class="ingredient">
-              <strong>बाकुची (Bakuchi)</strong>
-              मेलेनिन पिगमेंटेशन सक्रिय करने में पारंपरिक रूप से प्रसिद्ध
+        <section class="kit section-pad" aria-labelledby="kit-title">
+            <h2 id="kit-title">White Spot Care</h2>
+            <h3 class="kit-subtitle">आपकी त्वचा की देखभाल के लिए Ayurvedic Solution</h3>
+            <div class="product-intro-visual">
+                <!-- Product image बदलने के लिए नीचे src बदलें। -->
+                <div class="product-intro-badge">100%<br>Herbal</div>
+                <div class="product-intro-image">
+                    <img src="Image/product.avif" alt="WhiteSpot Care product kit" loading="lazy">
+                </div>
+                <div class="product-intro-badge">Daily<br>Care</div>
             </div>
-            <div class="ingredient">
-              <strong>मंजिष्ठा (Manjistha)</strong>
-              रक्त शोधक जड़ी-बूटी, जो त्वचा के रंग को एकसमान बनाती है
+            <div class="product-intro-points" aria-label="Product highlights">
+                <div class="product-intro-point">त्वचा की नियमित देखभाल</div>
+                <div class="product-intro-point">सुविधाजनक routine</div>
+                <div class="product-intro-point">तीन coordinated products</div>
+                <div class="product-intro-point">Label directions के अनुसार</div>
             </div>
-            <div class="ingredient">
-              <strong>खदिर (Khadira)</strong>
-              चरक संहिता अनुसार समस्त कुष्ठ व चर्म विकारों का शामक
+        </section>
+
+        <section class="how-it-works" aria-labelledby="how-it-works-title">
+            <h2 id="how-it-works-title">How It Works</h2>
+            <p class="section-lead">त्वचा की देखभाल के लिए सही दृष्टिकोण</p>
+
+            <!-- हर card में image का src, heading और description अपने अनुसार बदलें। -->
+            <article class="how-card">
+                <div class="how-card-image"><img src="./Image/work1.avif" alt="Skin health support" loading="lazy"></div>
+                <div class="how-card-copy">
+                    <span class="how-card-number">01</span>
+                    <h3>Skin Health Support</h3>
+                    <p>त्वचा के सामान्य स्वास्थ्य और देखभाल पर ध्यान देने के लिए।</p>
+                </div>
+            </article>
+            <article class="how-card">
+                <div class="how-card-image"><img src="./Image/work2.avif" alt="Daily care support" loading="lazy"></div>
+                <div class="how-card-copy">
+                    <span class="how-card-number">02</span>
+                    <h3>Daily Care Support</h3>
+                    <p>त्वचा की देखभाल से जुड़ी नियमित आदतों को अपनाने के लिए।</p>
+                </div>
+            </article>
+            <article class="how-card">
+                <div class="how-card-image"><img src="./Image/work3.avif" alt="Expert guided approach" loading="lazy"></div>
+                <div class="how-card-copy">
+                    <span class="how-card-number">03</span>
+                    <h3>Skin Protection</h3>
+                    <p>सफेद दाग वाली त्वचा को धूप से बचाने के लिए उचित सुरक्षा और नियमित देखभाल</p>
+                </div>
+            </article>
+            <article class="how-card">
+                <div class="how-card-image"><img src="./Image/work4.avif" alt="Overall wellness support" loading="lazy"></div>
+                <div class="how-card-copy">
+                    <span class="how-card-number">04</span>
+                    <h3>Skin Monitoring</h3>
+                    <p>सफेद दागों की देखभाल में मदद करने और त्वचा के रंग में सुधार को सपोर्ट करने के लिए।</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="ingredients section-pad" aria-labelledby="ingredients-title">
+            <h2 id="ingredients-title">प्रकृति से <span>प्रेरित</span><br>Ingredients</h2>
+            <p class="section-lead">प्राकृतिक Ingredients से निर्मित Skin Care</p>
+
+            <div class="ingredient-grid">
+                <article class="ingredient-item">
+                    <div class="ingredient-photo image-cut"><img src="./Image/ing1.avif" alt="हल्दी" loading="lazy">
+                    </div>
+                    <span>हल्दी</span>
+                    <p>त्वचा देखभाल में पारंपरिक उपयोग</p><b aria-hidden="true">01</b>
+                </article>
+                <article class="ingredient-item">
+                    <div class="ingredient-photo image-cut"><img src="./Image/ing2.avif" alt="नीम की पत्तियां"
+                            loading="lazy"></div>
+                    <span>नीम</span>
+                    <p>हर्बल देखभाल का जाना-पहचाना हिस्सा</p><b aria-hidden="true">02</b>
+                </article>
+                <article class="ingredient-item">
+                    <div class="ingredient-photo image-cut"><img src="./Image/ing3.avif" alt="मंजिष्ठा" loading="lazy">
+                    </div>
+                    <span>मंजिष्ठा</span>
+                    <p>आयुर्वेदिक formulations में उपयोग</p><b aria-hidden="true">03</b>
+                </article>
+                <article class="ingredient-item">
+                    <div class="ingredient-photo image-cut"><img src="./Image/ing4.avif" alt="एलोवेरा" loading="lazy">
+                    </div>
+                    <span>एलोवेरा</span>
+                    <p>देखभाल formulations में उपयोग</p><b aria-hidden="true">04</b>
+                </article>
             </div>
-            <div class="ingredient">
-              <strong>नीम व गिलोय (Neem-Giloy)</strong>
-              रोग प्रतिरोधक क्षमता (Immunity) संतुलन और एंटी-इंफ्लेमेटरी गुण
+        </section>
+
+        <section class="quality section-pad" aria-labelledby="quality-title">
+            <div class="quality-copy">
+                <h2 id="quality-title">गुणवत्ता</h2>
+                <p>गुणवत्ता और सामग्री की जानकारी साफ़-साफ़</p>
             </div>
-          </div>
-
-          <div style="height: 24px"></div>
-
-          <div class="quality-grid">
-            <div class="quality-item">
-              <span class="check">✓</span>
-              <div>
-                <strong>मानकीकृत अर्क (Standardized Extracts)</strong>
-                <p>उच्च गुणवत्ता वाले पौधों के सत्व से निर्मित।</p>
-              </div>
+            <div class="quality-marks" aria-label="दिए गए quality indicators">
+                <span class="mark-gmp"><img src="./Image/cert4.avif" alt="GMP certificate" loading="lazy"><b>GMP</b></span>
+                <span class="mark-iso"><img src="./Image/cert1.avif" alt="ISO certificate" loading="lazy"><b>ISO</b></span>
+                <span class="mark-fssai"><img src="./Image/cert2.avif" alt="FSSAI certificate" loading="lazy"><b>FSSAI</b></span>
+                <span class="mark-lab"><img src="./Image/cert3.avif" alt="Lab tested certificate" loading="lazy"><b>LAB TESTED</b></span>
             </div>
-            <div class="quality-item">
-              <span class="check">✓</span>
-              <div>
-                <strong>स्टेरॉयड मुक्त (Steroid-Free)</strong>
-                <p>इसमें किसी भी प्रकार के हानिकारक केमिकल या स्टेरॉयड नहीं हैं।</p>
-              </div>
+        </section>
+
+        <section class="offer section-pad" aria-labelledby="offer-title">
+            <div class="offer-copy">
+                <p class="offer-label"><svg class="icon" aria-hidden="true"><use href="#icon-gift"></use></svg>🎁 Combo Pack Special Offer</p>
+                <h2 id="offer-title">₹3,000 <em>₹1,999 Only</em></h2>
+                <p class="offer-subtitle">🔥 Order Now &amp; Get 33% OFF!</p>
             </div>
-          </div>
-        </div>
-      </section>
+            <div class="offer-photo"><img src="./Image/offer.avif" alt="WhiteSpot Care Skin Care Kit with a 33% offer badge" loading="lazy"></div>
+            <div class="offer-copy">
+                <div class="offer-perks">
+                    <article class="offer-perk"><span class="offer-perk-icon"><svg class="icon" aria-hidden="true"><use href="#icon-gift"></use></svg></span><strong>33% OFF</strong><small>Combo Pack Savings</small></article>
+                    <article class="offer-perk"><span class="offer-perk-icon"><svg class="icon" aria-hidden="true"><use href="#icon-truck"></use></svg></span><strong>Free Delivery</strong><small>फ्री डिलीवरी</small></article>
+                    <article class="offer-perk"><span class="offer-perk-icon"><svg class="icon" aria-hidden="true"><use href="#icon-clipboard"></use></svg></span><strong>Free Diet Chart</strong><small>फ्री डाइट चार्ट</small></article>
+                    <article class="offer-perk"><span class="offer-perk-icon"><svg class="icon" aria-hidden="true"><use href="#icon-package"></use></svg></span><strong>Cash on Delivery</strong><small>कैश ऑन डिलीवरी</small></article>
+                    <article class="offer-perk"><span class="offer-perk-icon"><svg class="icon" aria-hidden="true"><use href="#icon-lock"></use></svg></span><span class="offer-perk-copy"><strong>Secure Order Process</strong><small>आपकी जानकारी सुरक्षित रखी जाती है</small></span></article>
+                </div>
+             
+                <a class="button button-dark" href="#order"><svg class="icon" aria-hidden="true"><use href="#icon-cart"></use></svg>अभी अपना Order Book करें<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+            </div>
+        </section>
 
-      <!-- Transparent Experience -->
-      <section class="section tint" id="experience">
-        <div class="wrap">
-          <div class="section-head">
-            <div class="eyebrow">पारदर्शिता</div>
-            <h2>सच्ची जानकारी, कोई झूठे वादे नहीं</h2>
-          </div>
-          <div class="reviews-box">
-            "त्वचा पर सफेद दाग (विटिलिगो) का इलाज रातों-रात संभव नहीं होता। परिणाम व्यक्ति की उम्र, रोग की अवधि और त्वचा की स्थिति पर निर्भर करते हैं। हम 100% गारंटी जैसे भ्रामक दावे नहीं करते।"
-          </div>
-        </div>
-      </section>
+        <section class="order section-pad" id="order" aria-labelledby="order-title">
+            <h2 id="order-title"><svg class="icon" aria-hidden="true"><use href="#icon-cart"></use></svg> अपना White Spot Care ऑर्डर करें</h2>
+            <p class="order-lead">सिर्फ 2 जानकारी भरें</p>
+            
+            <section class="adyops-form-section" style="width:100%;max-width:760px;margin:0 auto;">
+                <div class="adyos-form" data-form="order-baby-care"></div>
+            </section>
+            <script src="https://app.adyops.com/embed.js" data-form="order-baby-care" data-workspace="vijay" async></script>
 
-      <!-- CTA Box -->
-      <section class="section">
-        <div class="wrap">
-          <div class="cta-panel">
-            <h2>त्वचा से जुड़ी शंकाओं का समाधान करें</h2>
-            <p>
-              अपनी समस्या पर सही सलाह और उत्पाद विवरण प्राप्त करने के लिए हमारे सपोर्ट काउंसलर से निःशुल्क बात करें।
-            </p>
-            <a class="btn" href="#contact">परामर्श के लिए फॉर्म भरें →</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact / Inquiry Form -->
-      <section class="section tint" id="contact">
-        <div class="wrap">
-          <div class="section-head">
-            <div class="eyebrow">सहायता केंद्र</div>
-            <h2>निःशुल्क परामर्श एवं जानकारी</h2>
-            <p>अपनी जानकारी दर्ज करें, हमारी टीम आपसे जल्द संपर्क करेगी।</p>
-          </div>
-
-          <div class="form-card">
-            <form id="inquiry-form">
-              <div class="field">
-                <label for="name">आपका नाम *</label>
-                <input id="name" name="name" type="text" placeholder="पूरा नाम दर्ज करें" required />
-              </div>
-              <div class="field">
-                <label for="phone">मोबाइल नंबर (WhatsApp) *</label>
-                <input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  maxlength="10"
-                  pattern="[6-9][0-9]{9}"
-                  placeholder="10 अंकों का फोन नंबर"
-                  required
-                />
-              </div>
-              <div class="field">
-                <label for="interest">आप क्या जानना चाहते हैं?</label>
-                <select id="interest" name="interest">
-                  <option>सफेद दाग में खान-पान और सावधानियाँ</option>
-                  <option>हर्बल उत्पाद की सामग्री और उपयोग विधि</option>
-                  <option>कीमत और होम डिलीवरी (COD) की जानकारी</option>
-                  <option>अन्य त्वचा परामर्श</option>
-                </select>
-              </div>
-              <button class="btn" type="submit">कॉल बैक का अनुरोध करें →</button>
-              <p class="form-note">🔒 आपकी जानकारी 100% गोपनीय रखी जाती है।</p>
-              <p id="form-status" class="form-note" style="color: #60a5fa;"></p>
+            <form id="order-form" method="post" target="order-response-frame" novalidate style="display:none;" aria-hidden="true">
+                <label for="customer-name">आपका नाम <span>*</span></label>
+                <input id="customer-name" name="name" type="text" placeholder="अपना नाम दर्ज करें" autocomplete="name"
+                    required>
+                <label for="customer-phone">मोबाइल नंबर (+91) <span>*</span></label>
+                <div class="phone-field">
+                    <span class="country-code" aria-hidden="true">+91</span>
+                    <input id="customer-phone" name="phone" type="tel" inputmode="numeric"
+                        placeholder="10 Digit Mobile Number" autocomplete="tel-national" maxlength="10"
+                        pattern="[0-9]{10}" required>
+                </div>
+                <label for="delivery-address">Complete Delivery Address <span>*</span></label>
+                <textarea id="delivery-address" name="address" placeholder="House/Flat No., Street, Area, City, State" autocomplete="street-address" required></textarea>
+                <label for="pin-code">PIN Code <span>*</span></label>
+                <input id="pin-code" name="pin_code" type="text" inputmode="numeric" placeholder="6 Digit PIN Code" autocomplete="postal-code" maxlength="6" pattern="[0-9]{6}" required>
+                <input type="hidden" name="request_id" id="request-id">
+                <input type="hidden" name="utm_source">
+                <input type="hidden" name="utm_medium">
+                <input type="hidden" name="utm_campaign">
+                <input type="hidden" name="utm_campaign_id">
+                <input type="hidden" name="utm_adset">
+                <input type="hidden" name="utm_adset_id">
+                <input type="hidden" name="utm_ad">
+                <input type="hidden" name="utm_ad_id">
+                <input type="hidden" name="utm_content">
+                <input type="hidden" name="utm_term">
+                <input type="hidden" name="utm_placement">
+                <input type="hidden" name="device_platform">
+                <input type="hidden" name="fbclid">
+                <input type="hidden" name="fbc">
+                <input type="hidden" name="fbp">
+                <input type="hidden" name="landing_page">
+                <input type="hidden" name="referrer">
+                <button class="button button-primary submit-button" type="submit"><svg class="icon" aria-hidden="true"><use href="#icon-cart"></use></svg><span class="button-label">मेरा Order Book करें</span><span class="button-spinner" aria-hidden="true"></span></button>
+                <p class="form-error" id="form-error" role="alert" hidden></p>
+                <div class="order-perks"><span><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>COD Available</span><span><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>Home Delivery</span><span><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>33% OFF</span>
+                </div>
+                <p class="privacy-note"><svg class="icon" aria-hidden="true"><use href="#icon-lock"></use></svg>आपकी जानकारी order processing और confirmation के लिए उपयोग की जाएगी।</p>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
             </form>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- FAQ Section -->
-      <section class="section" id="faqs">
-        <div class="wrap">
-          <div class="section-head">
-            <div class="eyebrow">FAQs</div>
-            <h2>अक्सर पूछे जाने वाले सवाल</h2>
-          </div>
-          <div class="faq-list">
+        <section class="reviews section-pad" aria-labelledby="reviews-title">
+            <h2 id="reviews-title">हमारे ग्राहकों का अनुभव</h2>
+
+            <article class="review-quote">
+                <div class="review-avatar-wrap"><span aria-hidden="true">NS</span><img class="review-avatar" src="./Image/test1.avif" alt="" loading="lazy"></div>
+                <div class="review-content">
+                    <div class="review-topline"><div class="stars" role="img" aria-label="Sample five-star rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg></div><span class="review-sample">Sample review</span></div>
+                    <blockquote>“मुझे सफेद दाग थे और मैं इसे लेकर परेशान रहती थी। Dermatologist से सलाह लेने के बाद WhiteSpot Care को अपनी skin-care routine में, label के निर्देशों के अनुसार, शामिल किया।”</blockquote>
+                    <div class="review-byline"><p>Neha Sharma</p><span class="review-location"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>Jaipur, Rajasthan</span></div>
+                    <small class="review-product">WhiteSpot Care Skin Care Kit</small>
+                </div>
+            </article>
+            <article class="review-quote">
+                <div class="review-avatar-wrap"><span aria-hidden="true">RK</span><img class="review-avatar" src="./Image/test2.avif" alt="" loading="lazy"></div>
+                <div class="review-content">
+                    <div class="review-topline"><div class="stars" role="img" aria-label="Sample five-star rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg></div><span class="review-sample">Sample review</span></div>
+                    <blockquote>“White patches को लेकर काफी चिंता रहती थी। WhiteSpot Care kit में routine के तीन products को समझना आसान लगा; त्वचा की समस्या के लिए dermatologist से सलाह भी ली।”</blockquote>
+                    <div class="review-byline"><p>Rajesh Kumar</p><span class="review-location"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>Delhi</span></div>
+                    <small class="review-product">WhiteSpot Care Skin Care Kit</small>
+                </div>
+            </article>
+            <article class="review-quote">
+                <div class="review-avatar-wrap"><span aria-hidden="true">PV</span><img class="review-avatar" src="./Image/test3.avif" alt="" loading="lazy"></div>
+                <div class="review-content">
+                    <div class="review-topline"><div class="stars" role="img" aria-label="Sample five-star rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg></div><span class="review-sample">Sample review</span></div>
+                    <blockquote>“सफेद दाग लंबे समय से बने हुए थे, इसलिए सही जानकारी के लिए dermatologist से बात की। WhiteSpot Care का इस्तेमाल मैंने label directions के अनुसार routine के हिस्से के रूप में किया।”</blockquote>
+                    <div class="review-byline"><p>Pooja Verma</p><span class="review-location"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>Lucknow</span></div>
+                    <small class="review-product">WhiteSpot Care Skin Care Kit</small>
+                </div>
+            </article>
+            <article class="review-quote">
+                <div class="review-avatar-wrap"><span aria-hidden="true">AS</span><img class="review-avatar" src="./Image/test4.avif" alt="" loading="lazy"></div>
+                <div class="review-content">
+                    <div class="review-topline"><div class="stars" role="img" aria-label="Sample five-star rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg></div><span class="review-sample">Sample review</span></div>
+                    <blockquote>“मैं white patches को लेकर परेशान था। WhiteSpot Care use करने से पहले dermatologist से उनकी वजह समझने की सलाह ली और kit को अपनी daily care routine में जोड़ा।”</blockquote>
+                    <div class="review-byline"><p>Amit Singh</p><span class="review-location"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>Jaipur</span></div>
+                    <small class="review-product">WhiteSpot Care Skin Care Kit</small>
+                </div>
+            </article>
+        </section>
+
+        <section class="faq section-pad" aria-labelledby="faq-title">
+            <h2 id="faq-title">अक्सर पूछे जाने वाले सवाल</h2>
             <details>
-              <summary>सफेद दाग (विटिलिगो) क्यों होता है?</summary>
-              <p>
-                जब त्वचा को रंग देने वाली कोशिकाएँ (मेलेनोसाइट्स) किसी ऑटोइम्यून कारण से नष्ट होने लगती हैं, तो त्वचा पर सफेद पैच बनने लगते हैं।
-              </p>
+                <summary>1. WhiteSpot Care Skin Care Kit क्या है?</summary>
+        <p>WhiteSpot Care Skin Care Kit एक 3-product skin-care routine है जिसमें WhiteSpot Care Tablet, Dermoveda Powder
+                    और Malam Skin Care Cream शामिल हैं।</p>
             </details>
             <details>
-              <summary>क्या सफेद दाग छूने से फैलता है?</summary>
-              <p>
-                बिल्कुल नहीं। सफेद दाग कोई संक्रामक रोग (Contagious disease) नहीं है। यह छूने, साथ खाने या उठने-बैठने से कभी नहीं फैलता।
-              </p>
+                <summary>2. क्या हर सफेद दाग Vitiligo होता है?</summary>
+                <p>हाँ। त्वचा पर सफेद या हल्के patches के कई संभावित कारण हो सकते हैं। </p>
             </details>
             <details>
-              <summary>क्या खान-पान में दूध और मछली साथ खाने से यह होता है?</summary>
-              <p>
-                यह एक आम भ्रांति है। इसका कोई वैज्ञानिक प्रमाण नहीं है कि दूध और मछली एक साथ खाने से विटिलिगो होता है।
-              </p>
+                <summary>3. क्या WhiteSpot Care Vitiligo को ठीक करता है?</summary>
+                <p>WhiteSpot Care को vitiligo का guaranteed cure या guaranteed treatment बताया जाना चाहिए। Vitiligo एक
+                    medical condition है और इसके लिए diagnosis तथा appropriate treatment के लिए dermatologist महत्वपूर्ण है।</p>
             </details>
             <details>
-              <summary>ऑर्डर पर कैश ऑन डिलीवरी (COD) उपलब्ध है?</summary>
-              <p>
-                हाँ, भारत के अधिकांश पिन कोड्स पर Cash on Delivery की सुविधा उपलब्ध है।
-              </p>
+                <summary>4. कितने दिनों में result दिखाई देगा?</summary>
+                <p>किसी निश्चित समय में result की guarantee नहीं की जा सकती। Skin conditions में response व्यक्ति और
+                    underlying condition के अनुसार अलग हो सकता है।</p>
             </details>
-          </div>
-        </div>
-      </section>
+            <details>
+                <summary>5. क्या इसे रोज़ इस्तेमाल किया जा सकता है?</summary>
+                <p>Products को packaging/label पर दिए गए recommended directions के अनुसार इस्तेमाल करें।</p>
+            </details>
+            <details>
+                <summary>6. क्या COD available है?</summary>
+                <p>हाँ, Cash on Delivery available है, subject to delivery location and order availability.</p>
+            </details>
+        </section>
+
+        <footer class="disclaimer section-pad">
+            <p>Disclaimer: This product is intended for general skin-care support. Results may vary from person to person. It is not intended to diagnose, treat, cure, or prevent any disease. Please read the product label and follow the recommended usage. Consult a qualified healthcare professional for persistent or serious skin concerns.</p>
+            <nav class="policy-links" aria-label="Policies and support">
+                <div class="policy-link-row">
+                    <button class="policy-link" type="button" data-policy="privacy">Privacy Policy</button>
+                    <span class="policy-separator" aria-hidden="true">|</span>
+                    <button class="policy-link" type="button" data-policy="terms">Terms &amp; Conditions</button>
+                    <span class="policy-separator" aria-hidden="true">|</span>
+                    <button class="policy-link" type="button" data-policy="shipping">Shipping Policy</button>
+                    <span class="policy-separator" aria-hidden="true">|</span>
+                    <button class="policy-link" type="button" data-policy="cancellation">Cancellation Policy</button>
+                    <span class="policy-separator" aria-hidden="true">|</span>
+                    <button class="policy-link" type="button" data-policy="contact">Contact Us</button>
+                    <span class="policy-separator" aria-hidden="true">|</span>
+                    <button class="policy-link" type="button" data-policy="disclaimer">Legal Disclaimer</button>
+                </div>
+            </nav>
+        </footer>
     </main>
-
-    <footer class="wrap">
-    </footer>
-
-    <!-- Mobile Fixed Bottom CTA -->
-    <div class="sticky-order">
-      <a class="btn" href="#contact">मुफ्त परामर्श के लिए संपर्क करें →</a>
+    <dialog class="policy-dialog" id="policy-dialog" aria-labelledby="policy-dialog-title">
+        <form method="dialog">
+            <button class="policy-close" type="submit" aria-label="Close policy"><svg class="icon" aria-hidden="true"><use href="#icon-x"></use></svg></button>
+        </form>
+        <h2 id="policy-dialog-title"></h2>
+        <div id="policy-dialog-content"></div>
+    </dialog>
+    <aside class="sticky-cta" id="sticky-cta" aria-label="WhiteSpot Care offer" hidden>
+        <div class="sticky-offer"><strong>33% OFF</strong><span>Free Delivery · COD</span></div>
+        <a class="sticky-button" href="#order">अभी Order करें<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+    </aside>
+    <iframe name="order-response-frame" id="order-response-frame" title="Order submission response"
+        class="visually-hidden-frame"></iframe>
+    <div class="form-loading-overlay" id="form-loading-overlay" role="status" aria-live="assertive" hidden>
+        <span class="overlay-spinner" aria-hidden="true"></span>
+        <p>आपका order भेजा जा रहा है…</p>
     </div>
-
     <script>
-      document.getElementById("inquiry-form").addEventListener("submit", function (e) {
-        e.preventDefault();
-        const status = document.getElementById("form-status");
-        status.textContent = "धन्यवाद! आपकी जानकारी प्राप्त हो गई है। हमारी टीम जल्द आपसे संपर्क करेगी।";
-        this.reset();
-      });
+        document.addEventListener("contextmenu", (event) => event.preventDefault());
+        document.addEventListener("wheel", (event) => {
+            if (event.ctrlKey) event.preventDefault();
+        }, { passive: false });
+        document.addEventListener("keydown", (event) => {
+            if ((event.ctrlKey || event.metaKey) && ["+", "=", "-", "0", "_"].includes(event.key)) {
+                event.preventDefault();
+            }
+        });
+
+        const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzla531K40Mhx3ffb0z80aQe31ufq_2UNHu4cc1QBe0-684cGyDTpZhDRrihfr8SmJggA/exec";
+        const UTM_KEYS = [
+            "utm_source", "utm_medium", "utm_campaign", "utm_campaign_id", "utm_adset",
+            "utm_adset_id", "utm_ad", "utm_ad_id", "utm_content", "utm_term",
+            "utm_placement", "device_platform"
+        ];
+        const ATTRIBUTION_KEY = "dermocare_attribution_v1";
+        const form = document.querySelector("#order-form");
+        const nameInput = document.querySelector("#customer-name");
+        const phoneInput = document.querySelector("#customer-phone");
+        const addressInput = document.querySelector("#delivery-address");
+        const pinInput = document.querySelector("#pin-code");
+        const errorMessage = document.querySelector("#form-error");
+        const statusMessage = document.querySelector("#form-status");
+        const submitButton = form.querySelector("button[type='submit']");
+        const submitLabel = submitButton.querySelector(".button-label");
+        const responseFrame = document.querySelector("#order-response-frame");
+        const loadingOverlay = document.querySelector("#form-loading-overlay");
+        const policyDialog = document.querySelector("#policy-dialog");
+        const policyDialogTitle = document.querySelector("#policy-dialog-title");
+        const policyDialogContent = document.querySelector("#policy-dialog-content");
+        let pendingRequestId = "";
+
+        const POLICY_CONTENT = {
+            privacy: {
+                title: "Privacy Policy",
+                paragraphs: [
+                    "Order request के लिए form आपका नाम और mobile number लेता है। Page URL, referrer और ad attribution details भी request के साथ भेजे जा सकते हैं।",
+                    "इस जानकारी का उद्देश्य order processing और confirmation है। Publish करने से पहले अपने actual data access, retention और support-contact details के अनुसार इस policy की समीक्षा करें।"
+                ]
+            },
+            terms: {
+                title: "Terms & Conditions",
+                paragraphs: [
+                    "WhiteSpot Care Skin Care Kit को नियमित skin-care routine के रूप में प्रस्तुत किया गया है; इसे किसी disease के cure या guaranteed treatment के रूप में न समझें।",
+                    "Products को packaging/label पर दिए गए directions के अनुसार इस्तेमाल करें। सफेद या हल्के patches के कारण जानने और treatment के लिए dermatologist से सलाह लें।"
+                ]
+            },
+            shipping: {
+                title: "Shipping Policy",
+                paragraphs: [
+                    "Home delivery और Cash on Delivery की उपलब्धता delivery location और order availability पर निर्भर करती है।",
+                    "Free delivery या promotional offer की लागू शर्तें order confirmation के समय जाँचें। इस page पर किसी निश्चित delivery timeline की guarantee नहीं दी जाती।"
+                ]
+            },
+            cancellation: {
+                title: "Cancellation Policy",
+                paragraphs: [
+                    "Order cancel या update करने के लिए confirmation के बाद हमारी team से संपर्क करें।",
+                    "Cancellation की उपलब्धता order की processing और dispatch स्थिति पर निर्भर करेगी। लागू eligibility की पुष्टि team से करें।"
+                ]
+            },
+            contact: {
+                title: "Contact Us",
+                paragraphs: [
+                    "Order confirmation के लिए हमारी team आपसे संपर्क करेगी। Order से जुड़ी सहायता के लिए confirmation message या product packaging पर दिए गए WhiteSpot Care support details का उपयोग करें।"
+                ]
+            },
+            disclaimer: {
+                title: "Legal Disclaimer",
+                paragraphs: [
+                    "WhiteSpot Care Skin Care Kit को किसी disease के cure, guaranteed treatment या guaranteed recovery के रूप में प्रस्तुत नहीं किया जाना चाहिए।",
+                    "त्वचा पर सफेद या हल्के patches के कई संभावित कारण हो सकते हैं। Diagnosis और उपयुक्त treatment के लिए dermatologist से सलाह लें। किसी निश्चित समय में result की guarantee नहीं दी जा सकती।"
+                ]
+            }
+        };
+
+        document.querySelectorAll("[data-policy]").forEach((button) => {
+            button.addEventListener("click", () => {
+                const policy = POLICY_CONTENT[button.dataset.policy];
+                if (!policy) return;
+                policyDialogTitle.textContent = policy.title;
+                policyDialogContent.replaceChildren(...policy.paragraphs.map((text) => {
+                    const paragraph = document.createElement("p");
+                    paragraph.textContent = text;
+                    return paragraph;
+                }));
+                policyDialog.showModal();
+            });
+        });
+
+        policyDialog.addEventListener("click", (event) => {
+            if (event.target === policyDialog) policyDialog.close();
+        });
+        let responseTimeout;
+
+        function readStoredAttribution() {
+            try {
+                return JSON.parse(sessionStorage.getItem(ATTRIBUTION_KEY) || "{}");
+            } catch {
+                return {};
+            }
+        }
+
+        function setHidden(name, value) {
+            const field = form.elements.namedItem(name);
+            if (field) field.value = value || "";
+        }
+
+        function cookie(name) {
+            const match = document.cookie.match(new RegExp("(?:^|;\\s*)" + name + "=([^;]*)"));
+            if (!match) return "";
+            try {
+                return decodeURIComponent(match[1]);
+            } catch {
+                return match[1];
+            }
+        }
+
+        function capture() {
+            const params = new URLSearchParams(window.location.search);
+            const attribution = readStoredAttribution();
+
+            UTM_KEYS.forEach((key) => {
+                const value = params.get(key) || attribution[key] || "";
+                setHidden(key, value);
+                if (params.get(key)) attribution[key] = params.get(key);
+            });
+
+            try {
+                sessionStorage.setItem(ATTRIBUTION_KEY, JSON.stringify(attribution));
+            } catch {
+                // Continue without cross-page attribution persistence when storage is unavailable.
+            }
+
+            const fbclid = params.get("fbclid") || "";
+            setHidden("fbclid", fbclid);
+            setHidden("fbc", cookie("_fbc") || (fbclid ? `fb.1.${Date.now()}.${fbclid}` : ""));
+            setHidden("fbp", cookie("_fbp"));
+            setHidden("landing_page", window.location.href);
+            setHidden("referrer", document.referrer);
+        }
+
+        capture();
+
+        function resetSubmitButton() {
+            window.clearTimeout(responseTimeout);
+            submitButton.disabled = false;
+            submitButton.classList.remove("is-loading");
+            form.classList.remove("is-loading");
+            loadingOverlay.hidden = true;
+            document.body.classList.remove("is-form-loading");
+            submitLabel.textContent = "मेरा Order Book करें";
+        }
+
+        nameInput.addEventListener("input", () => {
+            nameInput.value = nameInput.value
+                .replace(/[^A-Za-z\u0900-\u097F\u0A80-\u0AFF ]/g, "")
+                .replace(/\s{2,}/g, " ")
+                .replace(/^\s+/, "");
+            errorMessage.hidden = true;
+        });
+
+        phoneInput.addEventListener("input", () => {
+            let value = phoneInput.value.replace(/\D/g, "").slice(0, 10);
+            if (value && !/^[6-9]/.test(value)) value = value.slice(1);
+            phoneInput.value = value;
+            errorMessage.hidden = true;
+        });
+
+        pinInput.addEventListener("input", () => {
+            pinInput.value = pinInput.value.replace(/\D/g, "").slice(0, 6);
+            errorMessage.hidden = true;
+        });
+
+        function validName(value) {
+            return /^[A-Za-z\u0900-\u097F\u0A80-\u0AFF]+(?: [A-Za-z\u0900-\u097F\u0A80-\u0AFF]+)*$/.test(value.trim());
+        }
+
+        function validPhone(value) {
+            return /^[6-9][0-9]{9}$/.test(value);
+        }
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            errorMessage.hidden = true;
+            statusMessage.textContent = "";
+
+            const nameOk = validName(nameInput.value);
+            const phoneOk = validPhone(phoneInput.value);
+            const addressOk = addressInput.value.trim().length >= 10;
+            const pinOk = /^[1-9][0-9]{5}$/.test(pinInput.value);
+            if (!nameOk || !phoneOk || !addressOk || !pinOk || !form.reportValidity()) {
+                errorMessage.textContent = !nameOk
+                    ? "कृपया अपना नाम दर्ज करें।"
+                    : "कृपया 6 से 9 से शुरू होने वाला 10 अंकों का मोबाइल नंबर दर्ज करें।";
+                errorMessage.hidden = false;
+                (!nameOk ? nameInput : !phoneOk ? phoneInput : !addressOk ? addressInput : pinInput).focus();
+                return;
+            }
+
+            if (!/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec(?:\?.*)?$/.test(GOOGLE_APPS_SCRIPT_URL)) {
+                statusMessage.textContent = "Order submission configure नहीं है। Google Apps Script Web App URL जोड़ने के बाद फिर कोशिश करें।";
+                return;
+            }
+
+            pendingRequestId = window.crypto?.randomUUID?.()
+                || `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+            capture();
+            form.elements.namedItem("request_id").value = pendingRequestId;
+            form.action = GOOGLE_APPS_SCRIPT_URL;
+            form.classList.add("is-loading");
+            loadingOverlay.hidden = false;
+            document.body.classList.add("is-form-loading");
+            submitButton.disabled = true;
+            submitButton.classList.add("is-loading");
+            submitLabel.textContent = "कृपया प्रतीक्षा करें…";
+            statusMessage.textContent = "आपका order सुरक्षित रूप से भेजा जा रहा है…";
+            const thankYouUrl = new URL("thankyou.html", window.location.href);
+            UTM_KEYS.forEach((key) => {
+                const value = form.elements.namedItem(key).value;
+                if (value) thankYouUrl.searchParams.set(key, value);
+            });
+            if (typeof window.fbq === "function") {
+                window.fbq("track", "Lead", { content_name: "WhiteSpot Care Skin Care Kit" }, { eventID: pendingRequestId });
+            }
+            responseTimeout = window.setTimeout(() => {
+                resetSubmitButton();
+                statusMessage.textContent = "अभी confirmation नहीं मिला। दोबारा भेजने से पहले order status जाँच लें।";
+            }, 20000);
+            HTMLFormElement.prototype.submit.call(form);
+            window.setTimeout(() => {
+                window.clearTimeout(responseTimeout);
+                window.location.assign(thankYouUrl.href);
+            }, 1000);
+        });
+
+        window.addEventListener("message", (event) => {
+            const result = event.data;
+            if (result?.type !== "dermocare-order-result"
+                || !pendingRequestId
+                || result.requestId !== pendingRequestId) return;
+
+            resetSubmitButton();
+            if (!result.ok) {
+                statusMessage.textContent = result.message || "Order save नहीं हो सका। कृपया कुछ देर बाद फिर कोशिश करें।";
+            }
+        });
+
+        document.querySelectorAll(".review-avatar").forEach((image) => {
+            image.addEventListener("error", () => {
+                image.hidden = true;
+            }, { once: true });
+        });
+
+        // Keep the order form immediately after the certificate section.
+        const qualitySection = document.querySelector(".quality");
+        const orderSection = document.querySelector("#order");
+        if (qualitySection && orderSection) qualitySection.after(orderSection);
+        const offerSection = document.querySelector(".offer");
+        if (offerSection && orderSection) offerSection.after(orderSection);
+
+        const stickyCta = document.querySelector("#sticky-cta");
+        const stickyBlockers = new Set();
+        const stickyObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) stickyBlockers.add(entry.target);
+                else stickyBlockers.delete(entry.target);
+            });
+            stickyCta.hidden = stickyBlockers.size > 0;
+        }, { threshold: 0.01 });
+
+        document.querySelectorAll("#top, #order, .disclaimer").forEach((section) => {
+            stickyObserver.observe(section);
+        });
     </script>
-  </body>
+</body>
+
 </html>
