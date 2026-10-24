@@ -7,8 +7,8 @@
     <link rel="preload" as="image" href="./Image/banner.avif" type="image/avif" fetchpriority="high">
     <meta name="theme-color" content="#080B10">
     <meta name="description"
-        content="WhiteSpot Care Skin Care Kit: त्वचा की नियमित देखभाल के लिए 3-step routine. सही जानकारी और dermatologist की सलाह को प्राथमिकता दें।">
-    <title>WhiteSpot Care | त्वचा की नियमित देखभाल</title>
+        content="White Spot Treatment Skin Care: त्वचा की नियमित देखभाल के लिए 3-step routine. सही जानकारी और dermatologist की सलाह को प्राथमिकता दें।">
+    <title>White Spot Treatment | त्वचा की नियमित देखभाल</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://images.unsplash.com">
@@ -1984,6 +1984,10 @@
             color: #64748B;
         }
 
+        .privacy-note {
+            display: none;
+        }
+
         .phone-field {
             display: grid;
             grid-template-columns: auto minmax(0, 1fr);
@@ -2595,7 +2599,7 @@
     <main class="page-shell">
 
         <section class="hero" id="top" aria-labelledby="hero-title">
-            <img src="./Image/banner.avif" alt="WhiteSpot Care Hero Image" loading="eager" fetchpriority="high" decoding="async" width="450" height="245">
+            <img src="./Image/banner.avif" alt="White Spot Treatment Hero Image" loading="eager" fetchpriority="high" decoding="async" width="450" height="245">
         </section>
 
         <section class="pain" id="pain" aria-labelledby="pain-title">
@@ -2629,13 +2633,13 @@
         </section>
 
         <section class="kit section-pad" aria-labelledby="kit-title">
-            <h2 id="kit-title">White Spot Care</h2>
+            <h2 id="kit-title">White Spot Treatment</h2>
             <h3 class="kit-subtitle">आपकी त्वचा की देखभाल के लिए Ayurvedic Solution</h3>
             <div class="product-intro-visual">
                 <!-- Product image बदलने के लिए नीचे src बदलें। -->
                 <div class="product-intro-badge">100%<br>Herbal</div>
                 <div class="product-intro-image">
-                    <img src="Image/product.avif" alt="WhiteSpot Care product kit" loading="lazy">
+                    <img src="Image/product.avif" alt="White Spot Treatment product kit" loading="lazy">
                 </div>
                 <div class="product-intro-badge">Daily<br>Care</div>
             </div>
@@ -2734,13 +2738,13 @@
         <section class="offer section-pad" aria-labelledby="offer-title">
             <div class="offer-copy">
                 <p class="offer-label"><svg class="icon" aria-hidden="true"><use href="#icon-gift"></use></svg>🎁 Combo Pack Special Offer</p>
-                <h2 id="offer-title">₹3,000 <em>₹1,999 Only</em></h2>
-                <p class="offer-subtitle">🔥 Order Now &amp; Get 33% OFF!</p>
+                <h2 id="offer-title">10% OFF</h2>
+                <p class="offer-subtitle">🔥 Limited Time Offer</p>
             </div>
-            <div class="offer-photo"><img src="./Image/offer.avif" alt="WhiteSpot Care Skin Care Kit with a 33% offer badge" loading="lazy"></div>
+            <div class="offer-photo"><img src="./Image/offer.avif" alt="White Spot Treatment with a 10% offer badge" loading="lazy"></div>
             <div class="offer-copy">
                 <div class="offer-perks">
-                    <article class="offer-perk"><span class="offer-perk-icon"><svg class="icon" aria-hidden="true"><use href="#icon-gift"></use></svg></span><strong>33% OFF</strong><small>Combo Pack Savings</small></article>
+                    <article class="offer-perk"><span class="offer-perk-icon"><svg class="icon" aria-hidden="true"><use href="#icon-gift"></use></svg></span><strong>10% OFF</strong><small>Combo Pack Savings</small></article>
                     <article class="offer-perk"><span class="offer-perk-icon"><svg class="icon" aria-hidden="true"><use href="#icon-truck"></use></svg></span><strong>Free Delivery</strong><small>फ्री डिलीवरी</small></article>
                     <article class="offer-perk"><span class="offer-perk-icon"><svg class="icon" aria-hidden="true"><use href="#icon-clipboard"></use></svg></span><strong>Free Diet Chart</strong><small>फ्री डाइट चार्ट</small></article>
                     <article class="offer-perk"><span class="offer-perk-icon"><svg class="icon" aria-hidden="true"><use href="#icon-package"></use></svg></span><strong>Cash on Delivery</strong><small>कैश ऑन डिलीवरी</small></article>
@@ -2752,15 +2756,9 @@
         </section>
 
         <section class="order section-pad" id="order" aria-labelledby="order-title">
-            <h2 id="order-title"><svg class="icon" aria-hidden="true"><use href="#icon-cart"></use></svg> अपना White Spot Care ऑर्डर करें</h2>
+            <h2 id="order-title"><svg class="icon" aria-hidden="true"><use href="#icon-cart"></use></svg> अपना White Spot Treatment ऑर्डर करें</h2>
             <p class="order-lead">सिर्फ 2 जानकारी भरें</p>
-            
-            <section class="adyops-form-section" style="width:100%;max-width:760px;margin:0 auto;">
-                <div class="adyos-form" data-form="order-baby-care"></div>
-            </section>
-            <script src="https://app.adyops.com/embed.js" data-form="order-baby-care" data-workspace="vijay" async></script>
-
-            <form id="order-form" method="post" target="order-response-frame" novalidate style="display:none;" aria-hidden="true">
+            <form id="order-form" method="post" target="order-response-frame" novalidate>
                 <label for="customer-name">आपका नाम <span>*</span></label>
                 <input id="customer-name" name="name" type="text" placeholder="अपना नाम दर्ज करें" autocomplete="name"
                     required>
@@ -2771,10 +2769,6 @@
                         placeholder="10 Digit Mobile Number" autocomplete="tel-national" maxlength="10"
                         pattern="[0-9]{10}" required>
                 </div>
-                <label for="delivery-address">Complete Delivery Address <span>*</span></label>
-                <textarea id="delivery-address" name="address" placeholder="House/Flat No., Street, Area, City, State" autocomplete="street-address" required></textarea>
-                <label for="pin-code">PIN Code <span>*</span></label>
-                <input id="pin-code" name="pin_code" type="text" inputmode="numeric" placeholder="6 Digit PIN Code" autocomplete="postal-code" maxlength="6" pattern="[0-9]{6}" required>
                 <input type="hidden" name="request_id" id="request-id">
                 <input type="hidden" name="utm_source">
                 <input type="hidden" name="utm_medium">
@@ -2795,9 +2789,6 @@
                 <input type="hidden" name="referrer">
                 <button class="button button-primary submit-button" type="submit"><svg class="icon" aria-hidden="true"><use href="#icon-cart"></use></svg><span class="button-label">मेरा Order Book करें</span><span class="button-spinner" aria-hidden="true"></span></button>
                 <p class="form-error" id="form-error" role="alert" hidden></p>
-                <div class="order-perks"><span><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>COD Available</span><span><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>Home Delivery</span><span><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>33% OFF</span>
-                </div>
-                <p class="privacy-note"><svg class="icon" aria-hidden="true"><use href="#icon-lock"></use></svg>आपकी जानकारी order processing और confirmation के लिए उपयोग की जाएगी।</p>
                 <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
             </form>
         </section>
@@ -2809,36 +2800,36 @@
                 <div class="review-avatar-wrap"><span aria-hidden="true">NS</span><img class="review-avatar" src="./Image/test1.avif" alt="" loading="lazy"></div>
                 <div class="review-content">
                     <div class="review-topline"><div class="stars" role="img" aria-label="Sample five-star rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg></div><span class="review-sample">Sample review</span></div>
-                    <blockquote>“मुझे सफेद दाग थे और मैं इसे लेकर परेशान रहती थी। Dermatologist से सलाह लेने के बाद WhiteSpot Care को अपनी skin-care routine में, label के निर्देशों के अनुसार, शामिल किया।”</blockquote>
+                    <blockquote>“मुझे सफेद दाग थे और मैं इसे लेकर परेशान रहती थी। Dermatologist से सलाह लेने के बाद White Spot Treatment को अपनी skin-care routine में, label के निर्देशों के अनुसार, शामिल किया।”</blockquote>
                     <div class="review-byline"><p>Neha Sharma</p><span class="review-location"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>Jaipur, Rajasthan</span></div>
-                    <small class="review-product">WhiteSpot Care Skin Care Kit</small>
+                    <small class="review-product">White Spot Treatment Skin Care Kit</small>
                 </div>
             </article>
             <article class="review-quote">
                 <div class="review-avatar-wrap"><span aria-hidden="true">RK</span><img class="review-avatar" src="./Image/test2.avif" alt="" loading="lazy"></div>
                 <div class="review-content">
                     <div class="review-topline"><div class="stars" role="img" aria-label="Sample five-star rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg></div><span class="review-sample">Sample review</span></div>
-                    <blockquote>“White patches को लेकर काफी चिंता रहती थी। WhiteSpot Care kit में routine के तीन products को समझना आसान लगा; त्वचा की समस्या के लिए dermatologist से सलाह भी ली।”</blockquote>
+                    <blockquote>“White patches को लेकर काफी चिंता रहती थी। White Spot Treatment kit में routine के तीन products को समझना आसान लगा; त्वचा की समस्या के लिए dermatologist से सलाह भी ली।”</blockquote>
                     <div class="review-byline"><p>Rajesh Kumar</p><span class="review-location"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>Delhi</span></div>
-                    <small class="review-product">WhiteSpot Care Skin Care Kit</small>
+                    <small class="review-product">White Spot Treatment Skin Care Kit</small>
                 </div>
             </article>
             <article class="review-quote">
                 <div class="review-avatar-wrap"><span aria-hidden="true">PV</span><img class="review-avatar" src="./Image/test3.avif" alt="" loading="lazy"></div>
                 <div class="review-content">
                     <div class="review-topline"><div class="stars" role="img" aria-label="Sample five-star rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg></div><span class="review-sample">Sample review</span></div>
-                    <blockquote>“सफेद दाग लंबे समय से बने हुए थे, इसलिए सही जानकारी के लिए dermatologist से बात की। WhiteSpot Care का इस्तेमाल मैंने label directions के अनुसार routine के हिस्से के रूप में किया।”</blockquote>
+                    <blockquote>“सफेद दाग लंबे समय से बने हुए थे, इसलिए सही जानकारी के लिए dermatologist से बात की। White Spot Treatment का इस्तेमाल मैंने label directions के अनुसार routine के हिस्से के रूप में किया।”</blockquote>
                     <div class="review-byline"><p>Pooja Verma</p><span class="review-location"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>Lucknow</span></div>
-                    <small class="review-product">WhiteSpot Care Skin Care Kit</small>
+                    <small class="review-product">White Spot Treatment Skin Care    </small>
                 </div>
             </article>
             <article class="review-quote">
                 <div class="review-avatar-wrap"><span aria-hidden="true">AS</span><img class="review-avatar" src="./Image/test4.avif" alt="" loading="lazy"></div>
                 <div class="review-content">
                     <div class="review-topline"><div class="stars" role="img" aria-label="Sample five-star rating"><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg><svg class="icon"><use href="#icon-star"></use></svg></div><span class="review-sample">Sample review</span></div>
-                    <blockquote>“मैं white patches को लेकर परेशान था। WhiteSpot Care use करने से पहले dermatologist से उनकी वजह समझने की सलाह ली और kit को अपनी daily care routine में जोड़ा।”</blockquote>
+                    <blockquote>“मैं white patches को लेकर परेशान था। White Spot Treatment use करने से पहले dermatologist से उनकी वजह समझने की सलाह ली और     को अपनी daily care routine में जोड़ा।”</blockquote>
                     <div class="review-byline"><p>Amit Singh</p><span class="review-location"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>Jaipur</span></div>
-                    <small class="review-product">WhiteSpot Care Skin Care Kit</small>
+                    <small class="review-product">White Spot Treatment Skin Care    </small>
                 </div>
             </article>
         </section>
@@ -2846,8 +2837,8 @@
         <section class="faq section-pad" aria-labelledby="faq-title">
             <h2 id="faq-title">अक्सर पूछे जाने वाले सवाल</h2>
             <details>
-                <summary>1. WhiteSpot Care Skin Care Kit क्या है?</summary>
-        <p>WhiteSpot Care Skin Care Kit एक 3-product skin-care routine है जिसमें WhiteSpot Care Tablet, Dermoveda Powder
+                <summary>1. White Spot Treatment क्या है?</summary>
+        <p>White Spot Treatment skin-care routine है जिसमें White Spot Treatment Tablet, Dermoveda Powder
                     और Malam Skin Care Cream शामिल हैं।</p>
             </details>
             <details>
@@ -2855,8 +2846,8 @@
                 <p>हाँ। त्वचा पर सफेद या हल्के patches के कई संभावित कारण हो सकते हैं। </p>
             </details>
             <details>
-                <summary>3. क्या WhiteSpot Care Vitiligo को ठीक करता है?</summary>
-                <p>WhiteSpot Care को vitiligo का guaranteed cure या guaranteed treatment बताया जाना चाहिए। Vitiligo एक
+                <summary>3. क्या White Spot Treatment Vitiligo को ठीक करता है?</summary>
+                <p>White Spot Treatment को vitiligo का guaranteed cure या guaranteed treatment बताया जाना चाहिए। Vitiligo एक
                     medical condition है और इसके लिए diagnosis तथा appropriate treatment के लिए dermatologist महत्वपूर्ण है।</p>
             </details>
             <details>
@@ -2900,8 +2891,8 @@
         <h2 id="policy-dialog-title"></h2>
         <div id="policy-dialog-content"></div>
     </dialog>
-    <aside class="sticky-cta" id="sticky-cta" aria-label="WhiteSpot Care offer" hidden>
-        <div class="sticky-offer"><strong>33% OFF</strong><span>Free Delivery · COD</span></div>
+    <aside class="sticky-cta" id="sticky-cta" aria-label="White Spot Treatment offer" hidden>
+        <div class="sticky-offer"><strong>10% OFF</strong><span>Free Delivery · COD</span></div>
         <a class="sticky-button" href="#order">अभी Order करें<svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
     </aside>
     <iframe name="order-response-frame" id="order-response-frame" title="Order submission response"
@@ -2931,8 +2922,6 @@
         const form = document.querySelector("#order-form");
         const nameInput = document.querySelector("#customer-name");
         const phoneInput = document.querySelector("#customer-phone");
-        const addressInput = document.querySelector("#delivery-address");
-        const pinInput = document.querySelector("#pin-code");
         const errorMessage = document.querySelector("#form-error");
         const statusMessage = document.querySelector("#form-status");
         const submitButton = form.querySelector("button[type='submit']");
@@ -2955,7 +2944,7 @@
             terms: {
                 title: "Terms & Conditions",
                 paragraphs: [
-                    "WhiteSpot Care Skin Care Kit को नियमित skin-care routine के रूप में प्रस्तुत किया गया है; इसे किसी disease के cure या guaranteed treatment के रूप में न समझें।",
+                    "White Spot Treatment को नियमित skin-care routine के रूप में प्रस्तुत किया गया है; इसे किसी disease के cure या guaranteed treatment के रूप में न समझें।",
                     "Products को packaging/label पर दिए गए directions के अनुसार इस्तेमाल करें। सफेद या हल्के patches के कारण जानने और treatment के लिए dermatologist से सलाह लें।"
                 ]
             },
@@ -2976,13 +2965,13 @@
             contact: {
                 title: "Contact Us",
                 paragraphs: [
-                    "Order confirmation के लिए हमारी team आपसे संपर्क करेगी। Order से जुड़ी सहायता के लिए confirmation message या product packaging पर दिए गए WhiteSpot Care support details का उपयोग करें।"
+                    "Order confirmation के लिए हमारी team आपसे संपर्क करेगी। Order से जुड़ी सहायता के लिए confirmation message या product packaging पर दिए गए White Spot Treatment support details का उपयोग करें।"
                 ]
             },
             disclaimer: {
                 title: "Legal Disclaimer",
                 paragraphs: [
-                    "WhiteSpot Care Skin Care Kit को किसी disease के cure, guaranteed treatment या guaranteed recovery के रूप में प्रस्तुत नहीं किया जाना चाहिए।",
+                    "White Spot Treatment को किसी disease के cure, guaranteed treatment या guaranteed recovery के रूप में प्रस्तुत नहीं किया जाना चाहिए।",
                     "त्वचा पर सफेद या हल्के patches के कई संभावित कारण हो सकते हैं। Diagnosis और उपयुक्त treatment के लिए dermatologist से सलाह लें। किसी निश्चित समय में result की guarantee नहीं दी जा सकती।"
                 ]
             }
@@ -3081,11 +3070,6 @@
             errorMessage.hidden = true;
         });
 
-        pinInput.addEventListener("input", () => {
-            pinInput.value = pinInput.value.replace(/\D/g, "").slice(0, 6);
-            errorMessage.hidden = true;
-        });
-
         function validName(value) {
             return /^[A-Za-z\u0900-\u097F\u0A80-\u0AFF]+(?: [A-Za-z\u0900-\u097F\u0A80-\u0AFF]+)*$/.test(value.trim());
         }
@@ -3101,14 +3085,12 @@
 
             const nameOk = validName(nameInput.value);
             const phoneOk = validPhone(phoneInput.value);
-            const addressOk = addressInput.value.trim().length >= 10;
-            const pinOk = /^[1-9][0-9]{5}$/.test(pinInput.value);
-            if (!nameOk || !phoneOk || !addressOk || !pinOk || !form.reportValidity()) {
+            if (!nameOk || !phoneOk || !form.reportValidity()) {
                 errorMessage.textContent = !nameOk
                     ? "कृपया अपना नाम दर्ज करें।"
                     : "कृपया 6 से 9 से शुरू होने वाला 10 अंकों का मोबाइल नंबर दर्ज करें।";
                 errorMessage.hidden = false;
-                (!nameOk ? nameInput : !phoneOk ? phoneInput : !addressOk ? addressInput : pinInput).focus();
+                (!nameOk ? nameInput : phoneInput).focus();
                 return;
             }
 
@@ -3135,7 +3117,7 @@
                 if (value) thankYouUrl.searchParams.set(key, value);
             });
             if (typeof window.fbq === "function") {
-                window.fbq("track", "Lead", { content_name: "WhiteSpot Care Skin Care Kit" }, { eventID: pendingRequestId });
+                window.fbq("track", "Lead", { content_name: "White Spot Treatment Skin Care" }, { eventID: pendingRequestId });
             }
             responseTimeout = window.setTimeout(() => {
                 resetSubmitButton();
