@@ -2912,7 +2912,7 @@
             }
         });
 
-        const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzla531K40Mhx3ffb0z80aQe31ufq_2UNHu4cc1QBe0-684cGyDTpZhDRrihfr8SmJggA/exec";
+        const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxPRqH45by9sSCTHvW19dVugakTBM8FjZfZSs-Zv5qkD-v7NVL4NtDDQaxsVIyDsXUv-g/exec";
         const UTM_KEYS = [
             "utm_source", "utm_medium", "utm_campaign", "utm_campaign_id", "utm_adset",
             "utm_adset_id", "utm_ad", "utm_ad_id", "utm_content", "utm_term",
@@ -3078,7 +3078,7 @@
             return /^[6-9][0-9]{9}$/.test(value);
         }
 
-        form.addEventListener("submit", (event) => {
+        form.addEventListener("submit", async (event) => {
             event.preventDefault();
             errorMessage.hidden = true;
             statusMessage.textContent = "";
@@ -3123,11 +3123,28 @@
                 resetSubmitButton();
                 statusMessage.textContent = "अभी confirmation नहीं मिला। दोबारा भेजने से पहले order status जाँच लें।";
             }, 20000);
-            HTMLFormElement.prototype.submit.call(form);
-            window.setTimeout(() => {
-                window.clearTimeout(responseTimeout);
-                window.location.assign(thankYouUrl.href);
-            }, 1000);
+            try {
+                const formData = new FormData(form);
+                const payload = new URLSearchParams();
+                formData.forEach((value, key) => payload.append(key, String(value)));
+
+                // no-cors is required because Google Apps Script does not expose
+                // CORS response headers, but the POST still reaches doPost(e).
+                await fetch(GOOGLE_APPS_SCRIPT_URL, {
+                    method: "POST",
+                    mode: "no-cors",
+                    body: payload,
+                    keepalive: true
+                });
+            } catch (error) {
+                console.error("Order submission failed", error);
+                resetSubmitButton();
+                statusMessage.textContent = "Order भेजा नहीं जा सका। कृपया दोबारा कोशिश करें।";
+                return;
+            }
+
+            window.clearTimeout(responseTimeout);
+            window.location.assign(thankYouUrl.href);
         });
 
         window.addEventListener("message", (event) => {
